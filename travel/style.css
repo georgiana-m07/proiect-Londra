@@ -33547,3 +33547,10 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Stiluri pentru imaginile din galerie */
+.oc-item .entry .entry-image img.gallery-img {
+  max-width: 30%;
+  height: auto;
+}
+
