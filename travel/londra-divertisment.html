@@ -698,7 +698,7 @@
 
 						<div class="heading-block mb-4 bottom-100">
 
-							<h3>Pentru cei care indrăgesc sporturile extreme.</h3>
+							<h3>Pentru cei care indrăgesc sporturile extreme</h3>
 
 						</div>
 
@@ -908,6 +908,66 @@
 
 
 			</div>
+
+
+
+
+			<html lang="en">
+<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>GIF Button</title>
+			<style>
+				.button-container {
+					display: inline-block;
+					position: relative;
+					overflow: hidden;
+				}
+		
+				.button {
+					padding: 10px 20px;
+					background-color: #3498db;
+					color: #fff;
+					border: none;
+					cursor: pointer;
+					font-size: 16px;
+					transition: background-color 0.3s ease;
+				}
+		
+				.button:hover {
+					background-color: #2980b9;
+				}
+		
+				.gif-container {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					opacity: 0;
+					visibility: hidden;
+					transition: opacity 0.3s ease, visibility 0.3s ease;
+				}
+		
+				.button:hover .gif-container {
+					opacity: 1;
+					visibility: visible;
+				}
+		
+				.gif-image {
+					width: 100%;
+					height: auto;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="button-container">
+				<button class="button">Click me</button>
+				<div class="gif-container">
+					<img class="gif-image" src="demos/travel/images/divertisment/joey.gif" alt="Funny GIF">
+				</div>
+			</div>
+		</body>
+</html>
+
 
 		</section><!-- #content end -->
 
