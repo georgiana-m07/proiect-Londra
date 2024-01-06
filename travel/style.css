@@ -20713,14 +20713,17 @@ body:not(.has-plugin-html5video) .video-wrap video {
   margin: 0;
   line-height: 1;
   font-weight: var(--cnvs-page-title-font-weight);
-  color: var(--cnvs-page-title-color);
+  color: #FAEBD7;
   font-size: var(--cnvs-page-title-font-size);
   letter-spacing: var(--cnvs-page-title-spacing);
+  text-shadow: 2px 2px #c9b9a3;
+  
 }
 @media (max-width: 767.98px) {
   .page-title-content h1, .page-title-content .h1 {
     font-size: calc(1.5rem + 1.25vw);
     line-height: 1.5;
+    
   }
 }
 .page-title-content span {
@@ -20728,6 +20731,8 @@ body:not(.has-plugin-html5video) .video-wrap video {
   margin-top: 1rem;
   color: var(--cnvs-contrast-600);
   font-size: var(--cnvs-page-title-subtitle-size);
+ 
+
 }
 
 .breadcrumb {
@@ -33547,10 +33552,4 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
-
-/* Stiluri pentru imaginile din galerie */
-.oc-item .entry .entry-image img.gallery-img {
-  max-width: 30%;
-  height: auto;
-}
 
