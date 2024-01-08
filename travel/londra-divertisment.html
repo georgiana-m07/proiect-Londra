@@ -206,21 +206,9 @@
 					<div class="container text-center mw-md">
 						<div class="row">
 							<div class="col-lg-6">
-								<div class="heading-block mb-4 border-bottom-0">
-									
-									<p></p>
-									<h2> 3 categorii pentru un timp de neuitat :</h2>
-								</div>
-								<p></p>
-								<p class="lead">🎺. Pentru iubitorii de muzică</p>
-								<p class="lead">🪂. Pentru iubitorii de adrenalină</p>
-								<p class="lead">🏁. Pentru cei care indrăgesc sporturile extreme</p>
-							</div>
+							
 		
-							<!-- Add this div for the GIF -->
-							<div class="col-lg-6">
-								<img src="demos/travel/images/divertisment/joey.gif" class="img-fluid" alt="GIF" style="width: 100%; height: auto;" >
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -231,7 +219,103 @@
 
 
 
+		<title>Video Sound Event | Canvas</title>
 
+		<style>
+			#video-slider-mute {
+				position: absolute;
+				top: auto;
+				left: auto;
+				right: 20px;
+				bottom: 10px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: var(--cnvs-contrast-0);
+				color: var(--cnvs-contrast-1000);
+				font-size: 1.25rem;
+				border: 0;
+			}
+	
+			#video-slider-mute i {
+				position: relative;
+				left: 1px;
+			}
+	
+			#video-slider-mute i:nth-of-type(2),
+			#video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
+	
+			#video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
+		</style>
+	
+	</head>
+	
+	<body class="stretched">
+	
+		<!-- Document Wrapper
+		============================================= -->
+		<div id="wrapper">
+	
+			<!-- Content
+			============================================= -->
+			<section id="content">
+				<div class="content-wrap">
+	
+					<div class="container">
+	
+						<div class="row justify-content-around align-items-center">
+							<div class="col-md-4">
+								<h2 class="display-5 fw-medium">3 categorii pentru un timp de neuitat :<br></h2>
+								<p></p>
+								
+								<p class="lead">🎺. Pentru iubitorii de muzică</p>
+								<p class="lead">🪂. Pentru iubitorii de adrenalină</p>
+								<p class="lead">🏁. Pentru cei care indrăgesc sporturile extreme</p>
+							</div>
+	
+							<div class="col-md-6 rounded-5">
+								<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow"  width="100" height="50" poster="demos/travel/images/divertisment/chand.jpg" preload="auto" loop autoplay playsinline muted>
+									
+									<source src='demos/travel/images/divertisment/videoj.mp4' type='video/mp4'>
+								</video>
+								<button type="button" id="video-slider-mute">
+									<i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
+								</button>
+							</div>
+						</div>
+	
+					</div>
+	
+				</div>
+			</section><!-- #content end -->
+	
+	
+		</div><!-- #wrapper end -->
+	
+		<!-- JavaScripts
+		============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+	
+		<script>
+			var videoEl = document.querySelector('#slide-video'),
+				videoMute = document.querySelector('#video-slider-mute');
+	
+			videoMute.onclick = function(e) {
+				e.preventDefault();
+	
+				if( videoMute.classList.contains('video-muted') ) {
+					videoEl.muted = true;
+				} else {
+					videoEl.muted = false;
+				}
+	
+				videoMute.classList.toggle('video-muted');
+			};
+		</script>
+	
+	</body>
+	</html>
 
 
 
@@ -279,6 +363,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -323,10 +416,17 @@
 
 										<img src="demos/travel/images/divertisment/blues.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
-										
 
+									</div>
 
-
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
 									</div>
 
 								</div>
@@ -375,6 +475,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -419,6 +528,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -498,6 +616,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -542,12 +669,17 @@
 
 										<img src="demos/travel/images/divertisment/axe 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
-										
-
-
-
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -594,6 +726,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -638,6 +779,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -728,14 +878,17 @@
 										<img src="demos/travel/images/divertisment/lewis 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Ronnie Scott's Jazz Club">
 
 									</div>
-									<div class="rating">
-										<!-- Rating buttons go here -->
-										<button class="star" onclick="setRating(1)">&#9733;</button>
-										<button class="star" onclick="setRating(2)">&#9733;</button>
-										<button class="star" onclick="setRating(3)">&#9733;</button>
-										<button class="star" onclick="setRating(4)">&#9733;</button>
-										<button class="star" onclick="setRating(5)">&#9733;</button>
+								
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
 									</div>
+
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -781,10 +934,17 @@
 										<img src="demos/travel/images/divertisment/leag 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
 										
-
-
-
 									</div>
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
+
 
 								</div>
 
@@ -832,6 +992,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -876,6 +1045,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -1214,12 +1392,7 @@
 
 							<div class="clear"></div>
 
-							<div class="embed-responsive embed-responsive-16by9 mt-4">
-								<!-- Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual video ID from YouTube -->
-								<iframe class="embed-responsive-item"  width="100" height="50" src="https://www.youtube.com/embed/jPq-ULNiDK0" allowfullscreen></iframe>
-							</div>
-
-
+							
 							<i class="envelope"></i> info@london.com <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> +44 20 7946 0760
 
 
