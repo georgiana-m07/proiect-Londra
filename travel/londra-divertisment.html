@@ -20,8 +20,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-
-
+	
 	<!-- Core Style -->
 
 	<link rel="stylesheet" href="style.css">
@@ -86,6 +85,8 @@
 
 		<header id="header" class="transparent-header">
 
+			
+
 			<div id="header-wrap">
 
 				<div class="container">
@@ -115,9 +116,9 @@
 						<div class="primary-menu-trigger">
 
 							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-
-								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-
+							
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner">
+								
 							</button>
 
 						</div>
@@ -130,23 +131,26 @@
 
 						<nav class="primary-menu style-4 menu-spacing-margin">
 
+							
+
+
 							<ul class="menu-container">
 								
-								<li class="menu-item"><a class="menu-link" href="londra-home.html"><div>Home</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-home.html" style="color: rgb(117, 0, 0); " ><div>Home</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-obiective.html"><div></i>Obiective</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-obiective.html" style="color: rgb(117, 0, 0); "><div></i>Obiective</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-cazari.html"><div>Cazari</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-cazari.html" style="color: rgb(117, 0, 0);"><div>Cazari</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-transport.html"><div>Transport</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-transport.html" style="color:  rgb(117, 0, 0);"><div>Transport</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-restaurante.html"><div>Restaurante</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-restaurante.html" style="color: rgb(117, 0, 0);"><div>Restaurante</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-shopping.html"><div>Shopping</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-shopping.html" style="color:  rgb(117, 0, 0);"><div>Shopping</div></a></li>
 
-								<li class="menu-item current"><a class="menu-link" href="londra-divertisment.html"><div>Divertisment</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="londra-divertisment.html" style="color: rgb(117, 0, 0);"><div>Divertisment</div></a></li>
 
-								<li class="menu-item"><a class="menu-link" href="londra-evenimente.html"><div>Evenimente</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="londra-evenimente.html" style="color:  rgb(117, 0, 0);"><div>Evenimente</div></a></li>
 
 							</ul>
 
@@ -159,10 +163,11 @@
 			</div>
 
 			<div class="header-wrap-clone"></div>
+			
 
 		</header><!-- #header end -->
 
-
+		
 
 		<!-- Page Title
 
@@ -170,7 +175,7 @@
 
 		<section class="page-title page-title-center page-title-parallax parallax scroll-detect include-header include-topbar">
 
-			<img src="demos/travel/images/divertisment/ups.png" class="parallax-bg" style="height: 120%; top: -15%;">
+			<img src="demos/travel/images/divertisment/david.jpg" class="parallax-bg" style="height: 350%; top: 10%;">
 
 			<div class="container">
 
@@ -181,7 +186,7 @@
 					<div class="page-title-content">
 
 
-						<h1 style="background-color: #8d92a2;">Cum sa-ti faci sederea in Londra sa fie de neuitat</h1>
+						<h1 style="color: rgb(0, 0, 0);">Cum sa-ti faci sederea in Londra sa fie de neuitat</h1>
 
 
 					</div>
@@ -200,34 +205,267 @@
 
 		============================================= -->
 
-		<section id="content">
-			<div class="content-wrap">
-				<div class="section mt-6 footer-stick" style="background-color: #FFFFFF;">
-					<div class="container text-center mw-md">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="heading-block mb-4 border-bottom-0">
-									<span class="before-heading color">💂🏼‍♂️London baby💂🏼‍♂️</span>
-									<p></p>
-									<h2>3 categorii pentru un timp de neuitat:</h2>
-								</div>
+	
+
+		<title>Video Sound Event | Canvas</title>
+
+		<style>
+			#video-slider-mute {
+				position: absolute;
+				top: auto;
+				left: auto;
+				right: 20px;
+				bottom: 10px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: var(--cnvs-contrast-0);
+				color: var(--cnvs-contrast-1000);
+				font-size: 1.25rem;
+				border: 0;
+			}
+	
+			#video-slider-mute i {
+				position: relative;
+				left: 1px;
+			}
+	
+			#video-slider-mute i:nth-of-type(2),
+			#video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
+	
+			#video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
+		</style>
+	
+	</head>
+	
+	<body class="stretched">
+	
+		<!-- Document Wrapper
+		============================================= -->
+		<div id="wrapper">
+	
+			<!-- Content
+			============================================= -->
+			<section id="content">
+				<div class="content-wrap">
+	
+					<div class="container">
+	
+						<div class="row justify-content-around align-items-center">
+							<div class="col-md-4">
 								<p></p>
-								<p class="lead">🎺. Pentru iubitorii de muzică.</p>
-								<p class="lead">🪂. Pentru iubitorii de adrenalină.</p>
-								<p class="lead">🏁. Pentru cei care indrăgesc sporturile extreme.</p>
+								<h2 class="display-5 fw-medium" >3 categorii pentru un timp de neuitat :<br></h2>
+								<p></p>
+								
+								<p class="lead">🎺 Pentru iubitorii de muzică</p>
+								<p class="lead">🪂 Pentru iubitorii de adrenalină</p>
+								<p class="lead">🏁 Pentru cei care indrăgesc sporturile extreme</p>
 							</div>
-		
-							<!-- Add this div for the GIF -->
-							<div class="col-lg-6">
-								<img src="demos/travel/images/divertisment/joey.gif" class="img-fluid" alt="GIF" >
+	
+							<div class="col-md-6 rounded-5">
+								<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow"  width="100" height="50" poster="demos/travel/images/divertisment/chand.jpg" preload="auto" loop autoplay playsinline muted>
+									
+									<source src='demos/travel/images/divertisment/videoj.mp4' type='video/mp4'>
+								</video>
+								<button type="button" id="video-slider-mute">
+									<i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
+								</button>
 							</div>
 						</div>
+	
+					</div>
+	
+				</div>
+			</section><!-- #content end -->
+	
+	
+		</div><!-- #wrapper end -->
+	
+		<!-- JavaScripts
+		============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+	
+		<script>
+			var videoEl = document.querySelector('#slide-video'),
+				videoMute = document.querySelector('#video-slider-mute');
+	
+			videoMute.onclick = function(e) {
+				e.preventDefault();
+	
+				if( videoMute.classList.contains('video-muted') ) {
+					videoEl.muted = true;
+				} else {
+					videoEl.muted = false;
+				}
+	
+				videoMute.classList.toggle('video-muted');
+			};
+		</script>
+	
+	</body>
+	</html>
+
+	<title>Checklists | Canvas</title>
+
+	<style>
+
+		.checklist {
+			--cnvs-checklist-default-color: #111;
+			--cnvs-checklist-active-color: #CCC;
+			--cnvs-checklist-box-size: 1.125rem;
+			position: relative;
+		}
+		.checklist label {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			font-size: var(--cnvs-checklist-box-size);
+			cursor: pointer;
+			text-transform: none;
+			letter-spacing: 0;
+			font-weight: normal;
+			vertical-align: middle;
+		}
+		.checklist input[type="checkbox"] {
+			-webkit-appearance: none;
+		}
+		.checklist i {
+			position: absolute;
+			display: inline-block;
+			width: var(--cnvs-checklist-box-size);
+			height: var(--cnvs-checklist-box-size);
+			border: 2px solid var(--cnvs-checklist-default-color);
+			color: var(--cnvs-checklist-default-color);
+			border-radius: 3px;
+		}
+		.checklist input[type="checkbox"]:checked ~ i {
+			top: 0px;
+			border: none;
+			color: var(--cnvs-themecolor);
+		}
+
+		.checklist i::before {
+			opacity: 0;
+		}
+		.checklist input[type="checkbox"]:checked ~ i:before {
+			opacity: 1;
+		}
+		.checklist span {
+			position: relative;
+			left: calc(var(--cnvs-checklist-box-size) + 1rem);
+			transition: 0.5s;
+			color:var(--cnvs-checklist-default-color);
+		}
+		.checklist span:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: var(--cnvs-checklist-default-color);
+			transform: translateY(-50%) scaleX(0);
+			transition: transform 0.5s;
+			transform-origin: left;
+		}
+		.checklist input[type="checkbox"]:checked ~ span:before {
+			transform: translateY(-50%) scaleX(1);
+			transform-origin: left;
+			transition: transform 0.5s;
+		}
+		.checklist input[type="checkbox"]:checked ~ span {
+			color: var(--cnvs-checklist-active-color);
+		}
+
+		/* Dark */
+		.dark .checklist {
+			--cnvs-checklist-default-color: #EEE;
+			--cnvs-checklist-active-color: rgba(255,255,255,0.4);
+		}
+
+	</style>
+ 
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		
+		<section id="content">
+			<div class="content-wrap text-center">
+				<div class="container mw-md mx-auto">
+					<div class="row g-5">
+						<div class="col-lg-6">
+							<div class="checklist">
+								<h3 class="mb-0">Documente necesare pentru a participa :</h3>
+								<div class="op-05">De ce ai nevoie pentru a avea un timp de neuitat</div>
+								<div class="line my-4"></div>
+								<label class="mt-3">
+									<input type="checkbox" name="" id="">
+									<i class="fa-solid fa-check"></i>
+									<span>Pașaport</span>
+								</label>
+								<label class="mt-3">
+									<input type="checkbox" name="" id="">
+									<i class="fa-solid fa-check"></i>
+									<span>Hanorac/Tricou cu "I ❤️ LONDON"</span>
+								</label>
+								<label class="mt-3">
+									<input type="checkbox" name="" id="">
+									<i class="fa-solid fa-check"></i>
+									<span>Umbrelă</span>
+								</label>
+								<label class="mt-3">
+									<input type="checkbox" name="" id="" checked>
+									<i class="fa-solid fa-check"></i>
+									<span>Stare de spirit de milioane</span>
+								</label>
+								<label class="mt-3">
+									<input type="checkbox" name="" id=""  >
+									<i class="fa-solid fa-check"></i>
+									<span>Bani de buzunar</span>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
-		</section>
-		
 
+
+
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+		
 
 				<div class="container">
 
@@ -241,12 +479,13 @@
 
 						<div class="heading-block mb-4 bottom-100">
 
-							<h3>Pentru iubitorii de muzica</h3>
+							<h3>Pentru iubitorii de muzica 🎺</h3>
 
 						</div>
 
 					</div>
-
+<p></p>
+<p></p>
 
 					<div class="row posts-md col-mb-50 mb-0">
 
@@ -263,6 +502,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -307,10 +555,17 @@
 
 										<img src="demos/travel/images/divertisment/blues.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
-										
 
+									</div>
 
-
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
 									</div>
 
 								</div>
@@ -359,6 +614,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -403,6 +667,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -461,7 +734,7 @@
 
 						<div class="heading-block mb-4 bottom-100">
 
-							<h3> Pentru iubitorii de adrenalina</h3>
+							<h3> Pentru iubitorii de adrenalina 🪂</h3>
 
 						</div>
 
@@ -482,6 +755,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -526,12 +808,17 @@
 
 										<img src="demos/travel/images/divertisment/axe 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
-										
-
-
-
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -578,6 +865,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -622,6 +918,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -691,7 +996,7 @@
 
 						<div class="heading-block mb-4 bottom-100">
 
-							<h3>Pentru cei care indragesc sporturile extreme</h3>
+							<h3>Pentru cei care indragesc sporturile extreme 🏁</h3>
 
 						</div>
 
@@ -711,6 +1016,16 @@
 
 										<img src="demos/travel/images/divertisment/lewis 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Ronnie Scott's Jazz Club">
 
+									</div>
+								
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
 									</div>
 
 								</div>
@@ -744,7 +1059,7 @@
 							</div>
 
 						</div>
-
+						
 
 
 						<div class="entry col-md-6 ">
@@ -758,10 +1073,17 @@
 										<img src="demos/travel/images/divertisment/leag 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
 
 										
-
-
-
 									</div>
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
+
 
 								</div>
 
@@ -809,6 +1131,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -853,6 +1184,15 @@
 
 									</div>
 
+									<div class="col-lg-6">
+										<div class="white-section">
+											<form class="mb-0">
+												
+												<input id="input-12" value="2" class="rating" data-size="sm">
+												
+											</form>
+										</div>
+									</div>
 								</div>
 
 								<div class="col-lg-6 mt-3 mt-lg-0">
@@ -903,10 +1243,7 @@
 			</div>
 
 
-			<div class="embed-responsive embed-responsive-16by9 mt-4">
-                <!-- Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual video ID from YouTube -->
-                <iframe class="embed-responsive-item"  width="400" height="200" src="https://www.youtube.com/embed/jPq-ULNiDK0" allowfullscreen></iframe>
-            </div>
+		
 
         </div>
 
@@ -914,6 +1251,103 @@
 
 </div>
 		
+
+
+<title>Testimonial | Canvas</title>
+
+	<style>
+		.block-testimonials .owl-carousel .owl-nav [class*=owl-] {
+			opacity: 1 !important;
+		}
+		.block-testimonials .owl-carousel .owl-nav .owl-next {
+			right: -20px !important;
+		}
+		.block-testimonials .owl-carousel .owl-nav .owl-prev {
+			left: -20px !important;
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div class="row justify-content-center mb-5">
+						<div class="col-xl-6 col-lg-8 text-center">
+							<h3 class="h1 fw-bold mb-3">Recenzii</h3>
+						</div>
+					</div>
+
+					<!-- Testimonial Light
+					============================================= -->
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="block-testimonials card py-4">
+								<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
+									<div class="oc-item">
+										<div class="row g-0 align-items-center">
+										    <div class="col-md-4 d-flex flex-column text-center align-items-center">
+												<img src="demos/travel/images/divertisment/jeni.jpg"  class="Square mb-3 w-auto" width="100" height="100">
+												<h4 class="mb-0"><a class="text-dark" href="#"> Jeni Antonescu</a></h4>
+												<h5 class="text-muted mb-0 fw-normal">pictoriță</h5>
+										    </div>
+										    <div class="col-md-8 p-4 testi-content">
+												<p class="text-larger mb-0">"Am fost împreună cu familia într-o mini excursie spre Londra. Am petrecut o după-masă de neuitat la Cheese Rolling Festival. Copiii s-au distrat de minune, iar soțul meu nu s-a putut abține și a participat și el."</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="oc-item">
+										<div class="row g-0 align-items-center">
+										    <div class="col-md-4 d-flex flex-column text-center align-items-center">
+												<img src="demos/travel/images/divertisment/pitt.jpg"  class="Square mb-3 w-auto" width="100" height="100">
+												<h4 class="mb-0"><a class="text-dark" href="#">Bogdan Popescu</a></h4>
+												<h5 class="text-muted mb-0 fw-normal">Militar</h5>
+										    </div>
+										    <div class="col-md-8 p-4 testi-content">
+												<p class="text-larger mb-0">"De mult timp mi-am propus să ajung în Londra. Nu credeam că o să-mi caut bilete pentru încă o călătorie spre Londra chiar în timpul în care eram încă în oraș. Am fost împreună cu prietenii la Whistle Punks Axe Throwing, cea mai bună decizie. "</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="oc-item">
+										<div class="row g-0 align-items-center">
+										    <div class="col-md-4 d-flex flex-column text-center align-items-center">
+												<img src="demos/travel/images/divertisment/mat.jpg" class="Square mb-3 w-auto" width="100" height="100">
+												<h4 class="mb-0"><a class="text-dark" href="#">Matei Marculescu</a></h4>
+												<h5 class="text-muted mb-0 fw-normal">Cântăreț</h5>
+										    </div>
+										    <div class="col-md-8 p-4 testi-content">
+												<p class="text-larger mb-0">"De mic am fost pasionat de muzica jazz. Ajuns în Londra împreună cu soția mea alături de care împărtășesc aceași iubire față de muzică, am făcut rezervare la Ronnie Scott's Jazz Club. A fost una dintre cele mai frumoase întâlniri ale noastre, ne-am simțit ca în tinerețe."</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				
+
+					
+					
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+
 
 		</section><!-- #content end -->
 
@@ -969,6 +1403,10 @@
 											<span>Pentru intrebari:</span>
 
 											travel@london.com
+
+											<img src="demos/travel/images/divertisment/cutie.gif" >
+
+
 
 										</div>
 
@@ -1194,10 +1632,12 @@
 
 							<div class="clear"></div>
 
-
-
+							
 							<i class="envelope"></i> info@london.com <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> +44 20 7946 0760
 
+							
+
+							
 						</div>
 
 
@@ -1220,9 +1660,8 @@
 	<!-- Go To Top
 
 	============================================= -->
-
-	<div id="gotoTop" class="uil uil-angle-up"></div>
-
+	<button id="scrollToTopBtn" onclick="scrollToTop()">
+	</button>
 
 
 	<!-- JavaScripts
@@ -1263,7 +1702,7 @@
 
 	</script>
 
-
+<canvas jsname="h797r" class="lNPNe" aria-hidden="true" role="button" tabindex="-1" jsaction="uG8GZb" width="56" height="56"></canvas>
 
 </body>
 
