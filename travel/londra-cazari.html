@@ -399,48 +399,36 @@
 		<!-- Content---PUNE HARTA CU LOCATII
 		============================================= -->
 		
-		<section id="content">
-			<div class="content-wrap text-center">
-				<div class="container mw-md mx-auto">
-					<div class="row g-5">
-						<div class="col-lg-6">
-							<div class="checklist">
-								<h3 class="mb-0">Documente necesare pentru a participa :</h3>
-								<div class="op-05">De ce ai nevoie pentru a avea un timp de neuitat</div>
-								<div class="line my-4"></div>
-								<label class="mt-3">
-									<input type="checkbox" name="" id="">
-									<i class="fa-solid fa-check"></i>
-									<span>Pașaport</span>
-								</label>
-								<label class="mt-3">
-									<input type="checkbox" name="" id="">
-									<i class="fa-solid fa-check"></i>
-									<span>Hanorac/Tricou cu "I ❤️ LONDON"</span>
-								</label>
-								<label class="mt-3">
-									<input type="checkbox" name="" id="">
-									<i class="fa-solid fa-check"></i>
-									<span>Umbrelă</span>
-								</label>
-								<label class="mt-3">
-									<input type="checkbox" name="" id="" checked>
-									<i class="fa-solid fa-check"></i>
-									<span>Stare de spirit de milioane</span>
-								</label>
-								<label class="mt-3">
-									<input type="checkbox" name="" id=""  >
-									<i class="fa-solid fa-check"></i>
-									<span>Bani de buzunar</span>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+		<script>
+			function initMap() {
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: { lat: 51.5074, lng: -0.1278 },
+					zoom: 12
+				});
+		
+				// Add markers for specific locations
+				addMarker(map, 51.509865, -0.118092, 'Ronnie Scott\'s Jazz Club');
+				addMarker(map, 51.512614, -0.136238, 'Ain\'t Nothin\' But...');
+				addMarker(map, 51.500729, -0.118581, 'Private Beatles Taxi Tour of London');
+				addMarker(map, 51.493265, -0.121792, 'London Philharmonic Orchestra');
+			}
+		
+			function addMarker(map, lat, lng, title) {
+				var marker = new google.maps.Marker({
+					position: { lat: lat, lng: lng },
+					map: map,
+					title: title
+				});
+		
+				var infowindow = new google.maps.InfoWindow({
+					content: title
+				});
+		
+				marker.addListener('click', function () {
+					infowindow.open(map, marker);
+				});
+			}
+		</script>
 
 
 	</div><!-- #wrapper end -->
@@ -459,13 +447,11 @@
 </html>
 
 
+<div>
+	<div>
 
-
-
-
-
-
-		
+		<div>
+			<div>
 
 				<div class="container">
 
@@ -484,8 +470,53 @@
 						</div>
 
 					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
 <p></p>
+
 <p></p>
+
+<div class="container">
+    <div class="row posts-md col-mb-50 mb-0 mx-auto">
+        <div class="entry col-md-6">
+            <div class="grid-inner row align-items-center">
+                <div class="col-lg-6">
+                    <div class="entry-image mb-0">
+                        <img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-section">
+                            <form class="mb-0">
+                                <input id="input-12" value="2" class="rating" data-size="sm">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mt-lg-0">
+                    <div class="entry-title title-xs text-transform-none">
+                        <h4>Savoy</h4>
+                    </div>
+                    <p></p>
+                    <span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+                    <span class="before-heading">Telefon: +44 20 7836 4343</span>
+                    <span class="before-heading">Email: savoy@fairmont.com</span>
+                    <div class="entry-content">
+                        <p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container">
     <div class="row posts-md col-mb-50 mb-0 mx-auto">
@@ -523,293 +554,222 @@
 
 
 
-							<div class="row">
-								<div class="col-lg-12 mt-3 mt-lg-0">
-									<!-- Intrarea 2 -->
-									<div class="entry">
-										<!-- Continut intrare 2 -->
-									</div>
-								</div>
-							</div>
 
-
-							<div class="row">
-								<div class="col-lg-12 mt-3 mt-lg-0">
-									<!-- Intrarea 3 -->
-									<div class="entry">
-										<!-- Continut intrare 3 -->
-									</div>
-								</div>
-							</div>
-
-
-							<div class="row">
-								<div class="col-lg-12 mt-3 mt-lg-0">
-									<!-- Intrarea 4 -->
-									<div class="entry">
-										<!-- Continut intrare 4 -->
-									</div>
-								</div>
-							</div>
-
-
-							<div class="row">
-								<div class="col-lg-12 mt-3 mt-lg-0">
-									<!-- Intrarea 5 -->
-									<div class="entry">
-										<!-- Continut intrare 5 -->
-									</div>
-								</div>
-							</div>
-						</div>
+<div class="container">
+    <div class="row posts-md col-mb-50 mb-0 mx-auto">
+        <div class="entry col-md-6">
+            <div class="grid-inner row align-items-center">
+                <div class="col-lg-6">
+                    <div class="entry-image mb-0">
+                        <img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-section">
+                            <form class="mb-0">
+                                <input id="input-12" value="2" class="rating" data-size="sm">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mt-lg-0">
+                    <div class="entry-title title-xs text-transform-none">
+                        <h4>Savoy</h4>
+                    </div>
+                    <p></p>
+                    <span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+                    <span class="before-heading">Telefon: +44 20 7836 4343</span>
+                    <span class="before-heading">Email: savoy@fairmont.com</span>
+                    <div class="entry-content">
+                        <p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
+
+
+<div class="container">
+    <div class="row posts-md col-mb-50 mb-0 mx-auto">
+        <div class="entry col-md-6">
+            <div class="grid-inner row align-items-center">
+                <div class="col-lg-6">
+                    <div class="entry-image mb-0">
+                        <img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-section">
+                            <form class="mb-0">
+                                <input id="input-12" value="2" class="rating" data-size="sm">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mt-lg-0">
+                    <div class="entry-title title-xs text-transform-none">
+                        <h4>Savoy</h4>
+                    </div>
+                    <p></p>
+                    <span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+                    <span class="before-heading">Telefon: +44 20 7836 4343</span>
+                    <span class="before-heading">Email: savoy@fairmont.com</span>
+                    <div class="entry-content">
+                        <p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row posts-md col-mb-50 mb-0 mx-auto">
+        <div class="entry col-md-6">
+            <div class="grid-inner row align-items-center">
+                <div class="col-lg-6">
+                    <div class="entry-image mb-0">
+                        <img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-section">
+                            <form class="mb-0">
+                                <input id="input-12" value="2" class="rating" data-size="sm">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mt-lg-0">
+                    <div class="entry-title title-xs text-transform-none">
+                        <h4>Savoy</h4>
+                    </div>
+                    <p></p>
+                    <span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+                    <span class="before-heading">Telefon: +44 20 7836 4343</span>
+                    <span class="before-heading">Email: savoy@fairmont.com</span>
+                    <div class="entry-content">
+                        <p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 					<!-- Pentru iubitorii de adrenalină.-->
 
-					<div class="line"></div>
-
-
-					<div class="container text-center mw-md">
-
-						<div class="heading-block mb-4 bottom-100">
-
-							<h3>Categoria Mid-range budget</h3>
-
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-
 					</div>
 
-					<div class="row posts-md col-mb-50 mb-0">
+					
 
 
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/branza 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Ronnie Scott's Jazz Club">
-
-									</div>
-
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
 									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
 										</div>
 									</div>
 								</div>
-
-								<div class="col-lg-12 mt-3 mt-lg-0">
-
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>British Cheese Rolling</h4>
-
-									</div>
-                                    <p></p>
-									<span class="before-heading">Locatie: Cooper's Hill</span>
-
-									<span class="before-heading">Telefon: +44 20 7888 3333</span>
-
-									<span class="before-heading">Bilete: N/A</span>
-
-									<span class="before-heading">Specific: Cursă după brânză</span>
-
-									<div class="entry-content">
-
-										<p>Pentru iubitorii de divertisment, cursa după branză este cea mai bună alegere pentru ați petrece o zi de neuitat.</p>
-
-									</div>
-
-
-								</div>
-
 							</div>
-
 						</div>
+					</div>
+
+					
 
 
 
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/axe 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
-
-									</div>
-
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
 									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
 										</div>
 									</div>
 								</div>
-
-								<div class="col-lg-12 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>Whistle Punks Urban Axe Throwing</h4>
-
-									</div>
-									<p></p>
-									<span class="before-heading">Locație:  53 Eastcastle St, London W1W 8EE</span>
-
-									<span class="before-heading">Telefon: +44 20 8888 9999</span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la intrare</span>
-
-									<span class="before-heading">Specific: Aruncare cu topoare</span>
-
-
-
-									<div class="entry-content">
-
-										<p>Pentru cei care iubesc senzațile tari, nu ezitați să petreceți o zi la cote maxime, pe lângă topoare și sulițe.</p>
-
-									</div>
-
-								</div>
-
 							</div>
-
 						</div>
-
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/fly 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Borough Market">
-
-									</div>
-
-									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-12 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>iFLY London Indoor Skydiving</h4>
-
-									</div>
-									<p></p>
-									<span class="before-heading">Locație:  02 Peninsula Square</span>
-
-									<span class="before-heading">Telefon: +44 330 191 5387</span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la intrarei</span>
-
-									<span class="before-heading">Specific: Parașutism în interior</span>
-
-									<div class="entry-content">
-
-										<p>Cel mai palpitant mod de ați petrece ziua "în aer".</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0 ">
-
-										<img src="demos/travel/images/divertisment/james 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Columbia Road Flower Market">
-
-									</div>
-
-									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-12 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>James Bond pentru o zi</h4>
-
-
-									</div>
-									<p></p>
-									<span class="before-heading">Locație: St. James's Park</span>
-
-									<span class="before-heading">Telefon: +44 20 7456 8888</span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la locul întâlnirii</span>
-
-									<span class="before-heading">Specific: Împușcături și adrenalină</span>
-
-									<div class="entry-content">
-
-										<p>Sunteți iubitori ai filmelor cu agenți secreți? Aveți ocazia să petreceți o zi întreagă în pielea personajului James Bond.</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-
-						
-
-
-
-						
-
-
 					</div>
 
 					
@@ -817,13 +777,77 @@
 
 
 
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
 
 
 
 
-
-
-
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 
 
 
@@ -832,252 +856,183 @@
 
 					<!--Pentru cei care indrăgesc sporturile extreme.-->
 
-					<div class="line"></div>
-
-
-					<div class="container text-center mw-md">
-
-						<div class="heading-block mb-4 bottom-100">
-
-							<h3>Categoria Low budget</h3>
-
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-
 					</div>
 
+					
 
-					<div class="row posts-md col-mb-50 mb-0">
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/lewis 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Ronnie Scott's Jazz Club">
-
-									</div>
-								
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
 									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
 										</div>
 									</div>
-
-								</div>
-
-								<div class="col-lg-6 mt-3 mt-lg-0">
-
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>Formula 1: SilverStone Grand Prix</h4>
-
-									</div>
-                                    <p></p>
-									<span class="before-heading">Locatie: SilverStone Grand Prix</span>
-
-									<span class="before-heading">Telefon: +44 20 1111 1111</span>
-
-									<span class="before-heading">Bilete: Disponibile online</span>
-
-									<span class="before-heading">Specific: Club de formula 1</span>
-
-									<div class="entry-content">
-
-										<p>Cei care visează să piloteze monoposturi de pe vremea când Schumacher au ocazia să participe la o cursă de neuitat.</p>
-
-									</div>
-
-
-								</div>
-
-							</div>
-
-						</div>
-						
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/leag 1.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Greenwich">
-
-										
-									</div>
-									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
 										</div>
-									</div>
-
-
-								</div>
-
-								<div class="col-lg-6 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>Premier League</h4>
-
-									</div>
-									<p></p>
-
-
-									<span class="before-heading">Telefon: +44 20 3333 4444 </span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la intrare</span>
-
-									<span class="before-heading">Specific: Cluburi de fotball</span>
-
-
-
-									<div class="entry-content">
-
-										<p>Mereu am fost fan Chelsea, așa că la fiecare meci din Premier League o să țin cu ei. Tu ce echipă preferi? </p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0">
-
-										<img src="demos/travel/images/divertisment/horse 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);"alt="Borough Market">
-
-									</div>
-
-									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
 										</div>
 									</div>
 								</div>
-
-								<div class="col-lg-6 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>London International Horse Show</h4>
-
-									</div>
-									<p></p>
-									<span class="before-heading">Locație: ExCeL London </span>
-
-									<span class="before-heading">Telefon: +44 20 0000 0000</span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la intrarei</span>
-
-									<span class="before-heading">Specific: Inclusiv regina Elisabeta frecventa aceste showuri</span>
-
-									<div class="entry-content">
-
-										<p>„Adevărata frumusețe a calului constă în puterea și grația sa.” - Roy Rogers.</p>
-
-									</div>
-
-								</div>
-
 							</div>
-
 						</div>
-
-
-
-						<div class="entry col-md-6 ">
-
-							<div class="grid-inner row align-items-center">
-
-								<div class="col-lg-6">
-
-									<div class="entry-image mb-0 ">
-
-										<img src="demos/travel/images/divertisment/tenis 1.jpg"  onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Columbia Road Flower Market">
-
-									</div>
-
-									<div class="col-lg-6">
-										<div class="white-section">
-											<form class="mb-0">
-												
-												<input id="input-12" value="2" class="rating" data-size="sm">
-												
-											</form>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-6 mt-3 mt-lg-0">
-
-									<div class="entry-title title-xs text-transform-none">
-
-										<h4>Turneul de tenis de la Wimbledon</h4>
-
-
-									</div>
-									<p></p>
-									<span class="before-heading">Locație: All England Lawn Tennis and Croquet Club </span>
-
-									<span class="before-heading">Telefon: +44 20 7776 8885</span>
-
-									<span class="before-heading">Bilete: Disponibile online sau la intrare</span>
-
-									<span class="before-heading">Specific: Iarbă / exterior</span>
-
-									<div class="entry-content">
-
-										<p>Cel mai îndrăgit și așteptat sport de întreaga lume. Nu ezita să achiziționezi biletele cât mai rapid.</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-
-						
-
-
-
-						
-
-
 					</div>
 
+					
+
+
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+
+
+					<div class="container">
+						<div class="row posts-md col-mb-50 mb-0 mx-auto">
+							<div class="entry col-md-6">
+								<div class="grid-inner row align-items-center">
+									<div class="col-lg-6">
+										<div class="entry-image mb-0">
+											<img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+										</div>
+										<div class="col-lg-6">
+											<div class="white-section">
+												<form class="mb-0">
+													<input id="input-12" value="2" class="rating" data-size="sm">
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 mt-3 mt-lg-0">
+										<div class="entry-title title-xs text-transform-none">
+											<h4>Savoy</h4>
+										</div>
+										<p></p>
+										<span class="before-heading">Locatie: Strand, London WC2R 0EZ</span>
+										<span class="before-heading">Telefon: +44 20 7836 4343</span>
+										<span class="before-heading">Email: savoy@fairmont.com</span>
+										<div class="entry-content">
+											<p>The Savoy, un hotel gestionat de Fairmont, este perfect situat pe malul râului Tamisa, în inima a tot ceea ce Londra are de oferit. Aflat în fruntea scenei hotelurilor de lux de peste 130 de ani, The Savoy oferă o experiență care evoluează continuu pentru a satisface dorințele călătorului modern.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 
 				</div>
 
