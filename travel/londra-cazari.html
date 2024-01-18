@@ -446,41 +446,60 @@
 </body>
 </html>
 
+<!-- Includeți biblioteca Google Maps JavaScript API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=TREBUIE_SĂ_INTRODUCEȚI_CHEIA_API_AICI&callback=initMap" async defer></script>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hartă Londra</title>
-    <!-- Includeți biblioteca Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" integrity="sha512-M2uPvwNZvK5lfRRh3zU/T6zHoO6Ji/9ZKtG3GZux3SxgJc5YcFvy8x+FFGaEAgbTFrHaa9aSpdofxF6PfUZDJA==" crossorigin=""/>
-</head>
-<body>
-    <!-- Creează un container pentru hartă -->
-    <div id="map" style="height: 500px;"></div>
+<script>
+    function initMap() {
+        // Obțineți elementul div pentru hartă
+        var mapElement = document.getElementById('google-map4');
 
-    <!-- Includeți biblioteca Leaflet -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js" integrity="sha512-+bNb6OlfvGV/rnwcZOzcmj+zGv9k2eZd9l1cN6/2H9FwPAt+Ojkjt2F/62X2u72CtOvSTgHD+E2Iqr4+YcGpPQ==" crossorigin=""></script>
+        // Creare hartă Google
+        var map = new google.maps.Map(mapElement, {
+            zoom: 3,
+            center: { lat: -25.363, lng: 131.044 }  // Coordonatele centrale (Australia)
+        });
 
-    <script>
-        // Inițializarea hărții cu centrul la Londra
-        var map = L.map('map').setView([51.509865, -0.118092], 13);
+        // Adăugare markere
+        var markers = [
+            { address: "Melbourne, Australia", html: "Melbourne, Australia" },
+            { address: "Sydney, Australia", html: "Sydney, Australia" }
+        ];
 
-        // Adăugarea stratului de hartă OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        for (var i = 0; i < markers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: getLatLng(markers[i].address),
+                map: map,
+                title: markers[i].html
+            });
 
-        // Adăugarea unui marker pentru adresa din Londra
-        var marker = L.marker([51.509865, -0.118092]).addTo(map);
+            // Adăugare infowindow pentru fiecare marker
+            var infowindow = new google.maps.InfoWindow({
+                content: markers[i].html
+            });
 
-        // Adăugarea unui pop-up pentru marker
-        marker.bindPopup("<b>Adresa din Londra</b><br>123 Strada Exemplu, Londra").openPopup();
-    </script>
-</body>
-</html>
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+    }
 
+    // Funcție pentru a obține coordonatele LatLng pe baza unei adrese
+    function getLatLng(address) {
+        var geocoder = new google.maps.Geocoder();
+        var latLng = { lat: 0, lng: 0 };
+
+        geocoder.geocode({ address: address }, function(results, status) {
+            if (status === 'OK') {
+                latLng = results[0].geometry.location;
+            } else {
+                console.error('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+
+        return latLng;
+    }
+</script>
 
 
 
