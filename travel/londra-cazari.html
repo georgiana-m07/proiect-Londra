@@ -390,45 +390,6 @@
 
 </head>
 
-<body class="stretched">
-
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper">
-
-		<!-- Content---PUNE HARTA CU LOCATII
-		============================================= -->
-		
-		<script>
-			function initMap() {
-				var map = new google.maps.Map(document.getElementById('map'), {
-					center: { lat: 51.5074, lng: -0.1278 },
-					zoom: 12
-				});
-		
-				// Add markers for specific locations
-				addMarker(map, 51.509865, -0.118092, 'Ronnie Scott\'s Jazz Club');
-				addMarker(map, 51.512614, -0.136238, 'Ain\'t Nothin\' But...');
-				addMarker(map, 51.500729, -0.118581, 'Private Beatles Taxi Tour of London');
-				addMarker(map, 51.493265, -0.121792, 'London Philharmonic Orchestra');
-			}
-		
-			function addMarker(map, lat, lng, title) {
-				var marker = new google.maps.Marker({
-					position: { lat: lat, lng: lng },
-					map: map,
-					title: title
-				});
-		
-				var infowindow = new google.maps.InfoWindow({
-					content: title
-				});
-		
-				marker.addListener('click', function () {
-					infowindow.open(map, marker);
-				});
-			}
-		</script>
 
 
 	</div><!-- #wrapper end -->
