@@ -447,15 +447,40 @@
 </html>
 
 
-<h3>Full Width Google Map with Multiple Markers</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hartă Londra</title>
+    <!-- Includeți biblioteca Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" integrity="sha512-M2uPvwNZvK5lfRRh3zU/T6zHoO6Ji/9ZKtG3GZux3SxgJc5YcFvy8x+FFGaEAgbTFrHaa9aSpdofxF6PfUZDJA==" crossorigin=""/>
+</head>
+<body>
+    <!-- Creează un container pentru hartă -->
+    <div id="map" style="height: 500px;"></div>
 
-					<div id="google-map4" style="height: 250px; margin-bottom: 20px;" class="gmap" data-address="Australia" data-zoom="3" data-markers='[{address: "Melbourne, Australia",html: "Melbourne, Australia"},{address: "Sydney, Australia",html: "Sydney, Australia"}]' data-icon='{image: "one-page/images/icons/map-icon-red.png",iconsize: [32, 32],iconanchor: [14,44]}'></div>
+    <!-- Includeți biblioteca Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" integrity="sha512-+bNb6OlfvGV/rnwcZOzcmj+zGv9k2eZd9l1cN6/2H9FwPAt+Ojkjt2F/62X2u72CtOvSTgHD+E2Iqr4+YcGpPQ==" crossorigin=""></script>
 
-					<p class="mb-0">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus.Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.</p>
+    <script>
+        // Inițializarea hărții cu centrul la Londra
+        var map = L.map('map').setView([51.509865, -0.118092], 13);
 
-					</script>
+        // Adăugarea stratului de hartă OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-					<div class="line"></div>
+        // Adăugarea unui marker pentru adresa din Londra
+        var marker = L.marker([51.509865, -0.118092]).addTo(map);
+
+        // Adăugarea unui pop-up pentru marker
+        marker.bindPopup("<b>Adresa din Londra</b><br>123 Strada Exemplu, Londra").openPopup();
+    </script>
+</body>
+</html>
+
 
 
 
