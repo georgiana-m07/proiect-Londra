@@ -407,60 +407,7 @@
 </body>
 </html>
 
-<!-- Includeți biblioteca Google Maps JavaScript API -->
-<script src="https://maps.googleapis.com/maps/api/js?key=TREBUIE_SĂ_INTRODUCEȚI_CHEIA_API_AICI&callback=initMap" async defer></script>
 
-<script>
-    function initMap() {
-        // Obțineți elementul div pentru hartă
-        var mapElement = document.getElementById('google-map4');
-
-        // Creare hartă Google
-        var map = new google.maps.Map(mapElement, {
-            zoom: 3,
-            center: { lat: -25.363, lng: 131.044 }  // Coordonatele centrale (Australia)
-        });
-
-        // Adăugare markere
-        var markers = [
-            { address: "Melbourne, Australia", html: "Melbourne, Australia" },
-            { address: "Sydney, Australia", html: "Sydney, Australia" }
-        ];
-
-        for (var i = 0; i < markers.length; i++) {
-            var marker = new google.maps.Marker({
-                position: getLatLng(markers[i].address),
-                map: map,
-                title: markers[i].html
-            });
-
-            // Adăugare infowindow pentru fiecare marker
-            var infowindow = new google.maps.InfoWindow({
-                content: markers[i].html
-            });
-
-            marker.addListener('click', function() {
-                infowindow.open(map, marker);
-            });
-        }
-    }
-
-    // Funcție pentru a obține coordonatele LatLng pe baza unei adrese
-    function getLatLng(address) {
-        var geocoder = new google.maps.Geocoder();
-        var latLng = { lat: 0, lng: 0 };
-
-        geocoder.geocode({ address: address }, function(results, status) {
-            if (status === 'OK') {
-                latLng = results[0].geometry.location;
-            } else {
-                console.error('Geocode was not successful for the following reason: ' + status);
-            }
-        });
-
-        return latLng;
-    }
-</script>
 
 
 
@@ -515,7 +462,7 @@
             <div class="grid-inner row align-items-center">
                 <div class="col-lg-6">
                     <div class="entry-image mb-0">
-                        <img src="demos/travel/images/divertisment/jazz.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Ronnie Scott's Jazz Club">
+                        <img src="demos/travel/images/Lux/1.2.jpg" onclick="toggleDescription('desc1')" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'" class="dog-image" style="transform: scale(1);" alt="Savoy">
                     </div>
                     <div class="col-lg-6">
                         <div class="white-section">
