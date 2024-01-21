@@ -1,7 +1,26 @@
-/* ----------------------------------------------------------------
-	Custom CSS
-
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
-
+/* ----------------------------------------------------------------
+
+	Custom CSS
+
+
+
+	Add all your Custom Styled CSS here for New Styles or
+
+	Overwriting Default Theme Styles for Better Handling Updates
+
+-----------------------------------------------------------------*/
+
+
+/*Londra-Obiective*/
+.entry-image a {
+    display: block;
+    overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.entry-image a:hover img {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+	border-radius: 0.25rem;
+}
+
