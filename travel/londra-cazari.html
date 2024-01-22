@@ -224,6 +224,37 @@
 	
 			#video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
 		</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Obține toate butoanele "Next"
+        var nextButtons = document.querySelectorAll('.tab-action-btn-next');
+
+        // Adaugă un eveniment de clic pentru fiecare buton "Next"
+        nextButtons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                // Împiedică comportamentul implicit al link-ului
+                event.preventDefault();
+
+                // Obține tab-ul următor
+                var currentTab = button.closest('.tab-pane');
+                var nextTab = currentTab.nextElementSibling;
+
+                // Comută activele între tab-uri
+                currentTab.classList.remove('show', 'active');
+                nextTab.classList.add('show', 'active');
+
+                // Actualizează lista de tab-uri orizontale
+                var currentTabLink = document.querySelector('.list-group-item.active');
+                var nextTabLink = currentTabLink.nextElementSibling;
+                currentTabLink.classList.remove('active');
+                nextTabLink.classList.add('active');
+            });
+        });
+    });
+</script>
+
+
 	
 	</head>
 	
