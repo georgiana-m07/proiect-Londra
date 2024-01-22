@@ -1382,7 +1382,7 @@
 
 		<div class="container">
 
-			<h3 class="text-center">Hotel Booking Form</h3>
+			<h3 class="text-center">Hotel Booking Formular</h3>
 			<div class="card border-0 shadow-lg rounded-3" style="background-color: #062639;">
 				
 				<div class="card-body dark" style="padding: 60px">
@@ -1394,10 +1394,11 @@
 
 							<div class="col-12 mb-5">
 								<div id="tab-reservation" class="list-group list-group-horizontal d-flex justify-content-center" role="tablist">
-									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3 active" data-bs-toggle="list" href="#tab-reservation-select-dates" role="tab">1. Select Dates</a>
-									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-select-room" role="tab">2. Select Room</a>
-									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-contact" role="tab">3. Contact Details</a>
-									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-payment" role="tab">4. Make Payment</a>
+									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3 active" data-bs-toggle="list" href="#tab-reservation-select-dates" role="tab">1. Selectaza data</a>
+									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-select-room" role="tab">2. Selecteaza categoria </a>
+									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-select-room" role="tab">3. Selecteaza hotelul </a>
+									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-contact" role="tab">4. Datele de contact</a>
+									<a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-bs-toggle="list" href="#tab-reservation-payment" role="tab">5. Metoda de plata</a>
 								</div>
 							</div>
 
@@ -1421,27 +1422,27 @@
 
 											<div class="col-6">
 												<div class="mb-4">
-													<label>Select Rooms:</label>
+													<label>Selecteaza nr. de camere:</label>
 													<select class="form-select border-form-control required" name="booking-registration-rooms" id="booking-registration-rooms">
-														<option value="1 Room" selected="selected">1 Room</option>
-														<option value="2 Rooms">2 Rooms</option>
-														<option value="3 Rooms">3 Rooms</option>
+														<option value="1 Room" selected="selected">1 Camera</option>
+														<option value="2 Rooms">2 Camere</option>
+														<option value="3 Rooms">3 Camere</option>
 													</select>
 												</div>
 											</div>
 
 											<div class="col-6">
 												<div class="mb-4">
-													<label>Select Persons:</label>
+													<label>Selecteaza nr. de persoane:</label>
 													<select class="form-select border-form-control required" name="booking-registration-persons" id="booking-registration-persons">
-														<option value="1 Person" selected="selected">1 Person</option>
-														<option value="2 Persons">2 Persons</option>
-														<option value="3 Persons">3 Persons</option>
+														<option value="1 Person" selected="selected">1 Persoana</option>
+														<option value="2 Persons">2 Persoane</option>
+														<option value="3 Persons">3 Persoane</option>
 													</select>
 												</div>
 											</div>
 											<div class="col-12 text-end">
-												<a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark">Select Room</a>
+												<a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark">Selecteaza Categoria</a>
 											</div>
 										</div>
 									</div>
@@ -1453,30 +1454,71 @@
 													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Standard" id="booking-registration-room-standard" checked value="Standard Room">
 													<label for="booking-registration-room-standard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
-															<h4 class="my-0">Standard Room</h4>
-															<small class="text-muted">Garden View</small>
+															<h4 class="my-0">Categoria Luxury budget</h4>
+															
 														</span>
-														<h4 class="mb-0 fcolor">$21</h4>
+														
 													</label>
 
 													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-deluxe" value="Deluxe Room">
 													<label for="booking-registration-room-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
-															<h4 class="my-0">Deluxe Room</h4>
-															<small class="text-muted">City View</small>
-															<small class="text-muted">With Breakfast</small>
+															<h4 class="my-0">Categoria Mid-range budget</h4>
+															
 														</span>
-														<h4 class="mb-0 fcolor">$29</h4>
+														
 													</label>
 
 													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
 													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
-															<h4 class="my-0">Super Deluxe Room</h4>
-															<small class="text-muted">Sea View</small>
-															<small class="text-muted">With Breakfast</small>
+															<h4 class="my-0">Categoria Low budget</h4>
+															
 														</span>
-														<h4 class="mb-0 fcolor">$35</h4>
+														
+													</label>
+												</div>
+											</div>
+											<div class="col-12 text-end">
+												<a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark">Select Details</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="tab-reservation-select-room" role="tabpanel" aria-labelledby="tab-reservation-select-room">
+										<div class="row">
+											<div class="col-12">
+												<div class="list-group btn-group-vertical mb-3" role="group">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Standard" id="booking-registration-room-standard" checked value="Standard Room">
+													<label for="booking-registration-room-standard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+														<span class="d-block">
+															<h4 class="my-0">Categoria Luxury budget</h4>
+															<span class="d-block">
+																<small class="text-muted">City View</small>
+																<small class="text-muted">With Breakfast</small>
+																<small class="text-muted">City View</small>
+																<small class="text-muted">With Breakfast</small>
+															</span>
+														</span>
+														
+													</label>
+
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-deluxe" value="Deluxe Room">
+													<label for="booking-registration-room-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+														<span class="d-block">
+															<h4 class="my-0">Categoria Mid-range budget</h4>
+															
+														</span>
+														
+													</label>
+
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
+													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+														<span class="d-block">
+															<h4 class="my-0">Categoria Low budget</h4>
+															
+														</span>
+														
 													</label>
 												</div>
 											</div>
