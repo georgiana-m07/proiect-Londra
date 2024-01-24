@@ -283,13 +283,15 @@
 					<div class="container">
 						<div class="row justify-content-around align-items-center">
 							<div class="col-md-4 text-center">
-								<p class="lead" style="color:rgb(128, 22, 22); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);"> I. Luxury budget</p>
+								<p class="lead" style="color:rgb(128, 22, 22); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);"> 
+									<a href="#cuvant1" id="link1">I. Luxury budget</a></p>
 							</div>
 				
 						</div>
 						<div class="row justify-content-around align-items-center">
 							<div class="col-md-4 text-center">
-								<p class="lead" style="color: rgb(187, 33, 33); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);"> II. Mid-range budget</p>
+								<p class="lead" style="color: rgb(187, 33, 33); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);"> 
+									<a href="#cuvant2" id="link2">II. Mid-range budget</a></p>
 							</div>
 				
 							
@@ -299,7 +301,8 @@
 							
 							
 							<div class="col-md-4 text-center">
-								<p class="lead" style="color: rgb(184, 77, 77); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);"> III. Low budget</p>
+								<p class="lead" style="color: rgb(184, 77, 77); font-weight: bold; font-size: xx-large; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);">
+									<a href="#cuvant3" id="link3">III. Low budget</a></p></p>
 							</div>
 						</div>
 					</div>
@@ -314,7 +317,7 @@
 
 
 		<section id="content">
-			<div class="content-wrap d-flex min-vh-50 align-items-center">
+			<div class="content-wrap d-flex min-vh-40 align-items-center">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-10">
@@ -379,22 +382,7 @@
 		<script src="js/plugins.min.js"></script>
 		<script src="js/functions.bundle.js"></script>
 	
-		<script>
-			var videoEl = document.querySelector('#slide-video'),
-				videoMute = document.querySelector('#video-slider-mute');
-	
-			videoMute.onclick = function(e) {
-				e.preventDefault();
-	
-				if( videoMute.classList.contains('video-muted') ) {
-					videoEl.muted = true;
-				} else {
-					videoEl.muted = false;
-				}
-	
-				videoMute.classList.toggle('video-muted');
-			};
-		</script>
+		
 	
 	</body>
 	</html>
@@ -421,9 +409,7 @@
 			font-weight: normal;
 			vertical-align: middle;
 		}
-		.checklist input[type="checkbox"] {
-			-webkit-appearance: none;
-		}
+	
 		.checklist i {
 			position: absolute;
 			display: inline-block;
@@ -546,8 +532,12 @@
 
 		.my-custom-div {
         margin-left: 60px;  /* Spațiu liber în stânga */
-        margin-right: 40px; /* Spațiu liber în dreapta */
-    }
+        margin-right: 60px; /* Spațiu liber în dreapta */
+        }
+
+		
+
+    
 		
 	</style>
  
@@ -648,22 +638,23 @@
 
 
 					<!--Categoriile-->
-
+					<p id="cuvant1">
 					<div class="line"></div>
 
-
+					
 					<div class="container text-center mw-md">
 
 						<div class="heading-block mb-4 bottom-100">
-
+							
 							<h3>Categoria Luxury budget</h3>
-
+							
 						</div>
 
 					</div>
-
+				
 				</div>
 			</div>
+		</p>
 
 		</div>
 	</div>
@@ -679,7 +670,7 @@
 
 
 
-<div class="entry col-12" style="padding: 5rem;">
+<div class="entry col-12">
 	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
@@ -701,7 +692,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1669678014673!2d-0.12309542381781517!3d51.51015271050282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cbcfae5a4d%3A0x15f4effda4fbdc29!2sThe%20Savoy!5e0!3m2!1sro!2sro!4v1705844871652!5m2!1sro!2sro" data-lightbox="iframe"> Savoy</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1669678014673!2d-0.12309542381781517!3d51.51015271050282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cbcfae5a4d%3A0x15f4effda4fbdc29!2sThe%20Savoy!5e0!3m2!1sro!2sro!4v1705844871652!5m2!1sro!2sro" data-lightbox="iframe"> Savoy - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 125K</a></li>
 				</ul>
 			</div>
@@ -739,11 +730,11 @@
 
 <!-- Recenzia -->
 	
-<div class="content" style="padding-top: 2.5rem;">
+<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
 
 	<div class="content-wrap">
 
-		<div class="container">
+		<div class="container" style="max-width: none; width: 100%;">
 
 			<div class="row justify-content-center">
 
@@ -809,11 +800,7 @@
 
 
 
-	
-
-
-
-</div>
+	</div>
 
 
 </div>
@@ -842,7 +829,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5390204693567!2d-0.0881582238170806!3d51.52167270966112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caef3c10087%3A0x2c72c14a777c22b!2sMontcalm%20Royal%20London%20House!5e0!3m2!1sro!2sro!4v1705845403282!5m2!1sro!2sro" data-lightbox="iframe">The Montcalm Royal</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5390204693567!2d-0.0881582238170806!3d51.52167270966112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caef3c10087%3A0x2c72c14a777c22b!2sMontcalm%20Royal%20London%20House!5e0!3m2!1sro!2sro!4v1705845403282!5m2!1sro!2sro" data-lightbox="iframe">The Montcalm Royal - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 117K</a></li>
 				</ul>
 			</div>
@@ -871,9 +858,17 @@
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
 
-
+	</div>
 		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                           <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -924,12 +919,16 @@
 
 		</div>
 	</div>
-</div>
+                           </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
 
-	</div>
+	
 	</div>
 </div>
 
@@ -957,7 +956,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.049911204099!2d-0.17777192381765908!3d51.5123003103459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876054d83ad0061%3A0x6ed2e258bff80d13!2sRoyal%20Lancaster%20London!5e0!3m2!1sro!2sro!4v1705845507967!5m2!1sro!2sro" data-lightbox="iframe">Royal Lancaster</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.049911204099!2d-0.17777192381765908!3d51.5123003103459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876054d83ad0061%3A0x6ed2e258bff80d13!2sRoyal%20Lancaster%20London!5e0!3m2!1sro!2sro!4v1705845507967!5m2!1sro!2sro" data-lightbox="iframe">Royal Lancaster - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 121K</a></li>
 				</ul>
 			</div>
@@ -985,9 +984,18 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
+	</div>
 
 <!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+	<div class="content-wrap">
+
+		<div class="container" style="max-width: none; width: 100%;">
+
+			<div class="row justify-content-center">
+                   <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1036,11 +1044,16 @@
 
 		</div>
 	</div>
+                    </div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 
-	</div>
+
+
 	</div>
 </div>
 
@@ -1068,7 +1081,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> </i> <i class="bi-star-half color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.11008893439!2d-0.1268827238165421!3d51.52954060908613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b61c60a6e71%3A0x6743ee812c6413ad!2sThe%20Standard%2C%20London!5e0!3m2!1sro!2sro!4v1705845604981!5m2!1sro!2sro" data-lightbox="iframe">The Standard</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.11008893439!2d-0.1268827238165421!3d51.52954060908613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b61c60a6e71%3A0x6743ee812c6413ad!2sThe%20Standard%2C%20London!5e0!3m2!1sro!2sro!4v1705845604981!5m2!1sro!2sro" data-lightbox="iframe">The Standard - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 110K</a></li>
 				</ul>
 			</div>
@@ -1096,10 +1109,20 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
-
+	</div>
 
 <!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+
+
+<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+	<div class="content-wrap">
+
+		<div class="container" style="max-width: none; width: 100%;">
+
+			<div class="row justify-content-center">
+                    <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1146,10 +1169,12 @@
 
 		</div>
 	</div>
-</div>
-
-
+                    </div>
+			</div>
+		</div>
 	</div>
+
+</div>
 
 	</div>
 </div>
@@ -1178,7 +1203,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4852311705295!2d-0.08935942381815248!3d51.50431331092944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035aec559b97%3A0x39d8bfb462bd7070!2sShangri-La%20The%20Shard%2C%20London!5e0!3m2!1sro!2sro!4v1705845685426!5m2!1sro!2sro" data-lightbox="iframe">Shangri-La The Shard</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4852311705295!2d-0.08935942381815248!3d51.50431331092944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035aec559b97%3A0x39d8bfb462bd7070!2sShangri-La%20The%20Shard%2C%20London!5e0!3m2!1sro!2sro!4v1705845685426!5m2!1sro!2sro" data-lightbox="iframe">Shangri-La The Shard - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 105K</a></li>
 				</ul>
 			</div>
@@ -1206,10 +1231,18 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
-
+	</div>
 
 <!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+	<div class="content-wrap">
+
+		<div class="container" style="max-width: none; width: 100%;">
+
+			<div class="row justify-content-center">
+                    <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1253,11 +1286,14 @@
 
 		</div>
 	</div>
+                    </div>
+			</div>
+		</div>
+	</div>
 </div>
+	
 
 	</div>
-
-	</div>
 </div>
 
 
@@ -1272,34 +1308,35 @@
 
 
 
-					<!-- Mediu-->
+<!-- Mediu-->
 
 
 
 
-					<div class="container">
+<div class="container">
 
 
-						<!--Categoriile-->
+	<!--Categoriile-->
+	<p id="cuvant2">
+		<div class="line"></div>
 	
-						<div class="line"></div>
 	
+			<div class="container text-center mw-md">
 	
-						<div class="container text-center mw-md">
+				<div class="heading-block mb-4 bottom-100">
+					
+						<h3>Categoria Mid-range budget</h3>
+					
+				</div>
 	
-							<div class="heading-block mb-4 bottom-100">
+			</div>
 	
-								<h3>Categoria Mid-range budget</h3>
-	
-							</div>
-	
-						</div>
-	
-					</div>
+		</div>
+	</p>
+	</div>
+<p></p>
 
-					<p></p>
-
-					<p></p>
+<p></p>
 
 
 
@@ -1325,7 +1362,7 @@
 											<div class="entry-meta">
 												<ul>
 													<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i></i></li>
-													<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317693.3525092372!2d-0.6495398499999759!3d51.53193920000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3952c25ac1%3A0xfc50ec1abb9a72c!2sPremier%20Inn%20London%20Kings%20Cross%20hotel!5e0!3m2!1sro!2sro!4v1705845840167!5m2!1sro!2sro" data-lightbox="iframe">Premier Inn London City</a></li>
+													<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317693.3525092372!2d-0.6495398499999759!3d51.53193920000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3952c25ac1%3A0xfc50ec1abb9a72c!2sPremier%20Inn%20London%20Kings%20Cross%20hotel!5e0!3m2!1sro!2sro!4v1705845840167!5m2!1sro!2sro" data-lightbox="iframe">Premier Inn London City - harta</a></li>
 													<li><i class="like-icon">&#x1F60D;</i><a href="#"> 60K</a></li>
 												</ul>
 											</div>
@@ -1353,9 +1390,16 @@
 											
 											<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 										</div>
-
+									</div>
 
 <!-- Recenzia -->
+<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+	<div class="content-wrap">
+
+		<div class="container" style="max-width: none; width: 100%;">
+
+			<div class="row justify-content-center">
 <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
@@ -1403,11 +1447,15 @@
 		</div>
 	</div>
 </div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
-									</div>
-									</div>
+
+</div>
 </div>
 
 
@@ -1434,7 +1482,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317693.8360737257!2d-0.6495426085037277!3d51.53186990892163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876032d57c695a9%3A0xd76699ed2c6e222!2sHoliday%20Inn%20London%20-%20Whitechapel%2C%20an%20IHG%20Hotel!5e0!3m2!1sro!2sro!4v1705845961636!5m2!1sro!2sro" data-lightbox="iframe">Holiday Inn London</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317693.8360737257!2d-0.6495426085037277!3d51.53186990892163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876032d57c695a9%3A0xd76699ed2c6e222!2sHoliday%20Inn%20London%20-%20Whitechapel%2C%20an%20IHG%20Hotel!5e0!3m2!1sro!2sro!4v1705845961636!5m2!1sro!2sro" data-lightbox="iframe">Holiday Inn London - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 53K</a></li>
 				</ul>
 			</div>
@@ -1462,9 +1510,18 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
+	</div>
 
-		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+	<!-- Recenzia -->
+
+	<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+		<div class="content-wrap">
+	
+			<div class="container" style="max-width: none; width: 100%;">
+	
+				<div class="row justify-content-center">
+                    <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1508,14 +1565,18 @@
 
 		</div>
 	</div>
-</div>
+                     </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
 	</div>
 
 
-	</div>
+	
 </div>
 
 
@@ -1542,7 +1603,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4430475235217!2d-0.10755952381810492!3d51.505087310872845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604afec0494a1%3A0x7d9a2f145a647e8e!2sIbis!5e0!3m2!1sro!2sro!4v1705846019085!5m2!1sro!2sro" data-lightbox="iframe">Ibis London Blackfriars</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4430475235217!2d-0.10755952381810492!3d51.505087310872845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604afec0494a1%3A0x7d9a2f145a647e8e!2sIbis!5e0!3m2!1sro!2sro!4v1705846019085!5m2!1sro!2sro" data-lightbox="iframe">Ibis London Blackfriars - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 49K</a></li>
 				</ul>
 			</div>
@@ -1570,11 +1631,19 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
+	</div>
 
+	<!-- Recenzia -->
 
-		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
-	<div class="block-testimonials card py-4">
+	<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+		<div class="content-wrap">
+	
+			<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                         <div class="col-lg col-md-8 mt-4 mt-lg-0">
+	                        <div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
 				<div class="row g-0 align-items-center">
@@ -1616,13 +1685,14 @@
 			</div>
 
 		</div>
-	</div>
-</div>
+	                       
+						 </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+	    </div>
 
-
-
-
-	</div>
 
 	</div>
 </div>
@@ -1651,7 +1721,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> </i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39735.045577530815!2d-0.14618413773637934!3d51.50513683143883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caedeca92e1%3A0x5c3636c77eaa48a5!2sTravelodge%20London%20Central%20City%20Road!5e0!3m2!1sro!2sro!4v1705846083698!5m2!1sro!2sro" data-lightbox="iframe">Travelodge London</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39735.045577530815!2d-0.14618413773637934!3d51.50513683143883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caedeca92e1%3A0x5c3636c77eaa48a5!2sTravelodge%20London%20Central%20City%20Road!5e0!3m2!1sro!2sro!4v1705846083698!5m2!1sro!2sro" data-lightbox="iframe">Travelodge London - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 41K</a></li>
 				</ul>
 			</div>
@@ -1679,12 +1749,20 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
-
+	</div>
 
 
 
 		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                         <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1733,8 +1811,12 @@
 
 		</div>
 	</div>
-</div>
-	</div>
+                         </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 
 	</div>
 </div>
@@ -1763,7 +1845,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4964.979022724986!2d-0.09249914609374431!3d51.52258090000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cae4dc8f5bd%3A0x39b6a54001b0169e!2sPoint%20A%20London%2C%20Shoreditch!5e0!3m2!1sro!2sro!4v1705846152453!5m2!1sro!2sro" data-lightbox="iframe">Point A Hotel London Shoreditch</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4964.979022724986!2d-0.09249914609374431!3d51.52258090000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cae4dc8f5bd%3A0x39b6a54001b0169e!2sPoint%20A%20London%2C%20Shoreditch!5e0!3m2!1sro!2sro!4v1705846152453!5m2!1sro!2sro" data-lightbox="iframe">Point A Hotel London Shoreditch - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 37K</a></li>
 				</ul>
 			</div>
@@ -1792,9 +1874,17 @@
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
 
-
+	</div>
 		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                         <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -1843,9 +1933,13 @@
 
 		</div>
 	</div>
-</div>
+                         </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</div>
+	
 	</div>
 </div>
 			
@@ -1857,35 +1951,36 @@
 				
 
 
-					<!--Low-->
+	<!--Low-->
 
 
 
 
 
-					<div class="container">
+	<div class="container">
 
 
-						<!--Categoriile-->
+		<!--Categoriile-->
+		<p id="cuvant3">
+		<div class="line"></div>
 	
-						<div class="line"></div>
 	
+			<div class="container text-center mw-md">
 	
-						<div class="container text-center mw-md">
+				<div class="heading-block mb-4 bottom-100">
+					
+						<h3>Categoria Low budget</h3>
+					
+				</div>
 	
-							<div class="heading-block mb-4 bottom-100">
+			</div>
 	
-								<h3>Categoria Low budget</h3>
-	
-							</div>
-	
-						</div>
-	
-					</div>
+		</div>
+	</p>
+	</div>
 
-					<p></p>
-
-					<p></p>
+<p></p>
+<p></p>
 	
 					
 
@@ -1911,7 +2006,7 @@
 																<div class="entry-meta">
 																	<ul>
 																		<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i></li>
-																		<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1482688407086!2d-0.12903192381661283!3d51.528840309137394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b26738d4397%3A0x1511d2115652f84b!2sKabannas%20London%20St%20Pancras!5e0!3m2!1sro!2sro!4v1705846211872!5m2!1sro!2sro" data-lightbox="iframe">YHA London St Pancras</a></li>
+																		<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1482688407086!2d-0.12903192381661283!3d51.528840309137394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b26738d4397%3A0x1511d2115652f84b!2sKabannas%20London%20St%20Pancras!5e0!3m2!1sro!2sro!4v1705846211872!5m2!1sro!2sro" data-lightbox="iframe">YHA London St Pancras - harta</a></li>
 																		<li><i class="like-icon">&#x1F60D;</i><a href="#"> 20K</a></li>
 																	</ul>
 																</div>
@@ -1939,9 +2034,17 @@
 																
 																<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 															</div>
-
+														</div>
 
 															<!-- Recenzia -->
+
+															<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+																<div class="content-wrap">
+															
+																	<div class="container" style="max-width: none; width: 100%;">
+															
+																		<div class="row justify-content-center">
 <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
@@ -1987,9 +2090,14 @@
 		</div>
 	</div>
 </div>
-														</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
 
 														</div>
+
+													
 </div>
 
 
@@ -2016,7 +2124,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2237203607747!2d-0.10018422381899231!3d51.49076191191928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876049ee4437541%3A0x43acb3a76d95814c!2sSafestay%20London%20Elephant%20%26%20Castle!5e0!3m2!1sro!2sro!4v1705846260426!5m2!1sro!2sro" data-lightbox="iframe">Safestay London Elephant & Castle</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2237203607747!2d-0.10018422381899231!3d51.49076191191928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876049ee4437541%3A0x43acb3a76d95814c!2sSafestay%20London%20Elephant%20%26%20Castle!5e0!3m2!1sro!2sro!4v1705846260426!5m2!1sro!2sro" data-lightbox="iframe">Safestay London Elephant & Castle - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 18K</a></li>
 				</ul>
 			</div>
@@ -2045,9 +2153,17 @@
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
 
-
+	</div>
 		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                       <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -2094,9 +2210,14 @@
 
 		</div>
 	</div>
-</div>
+                      </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</div>
+
+	
 	</div>
 </div>
 
@@ -2124,7 +2245,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i> <i class="bi-star-half color"></i> </i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1475530865805!2d-0.07074592381776877!3d51.51050891047668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760335d00dd5b3%3A0x7ada14d7b8efd8ba!2sWombat&#39;s%20City%20Hostel%20London!5e0!3m2!1sro!2sro!4v1705846306346!5m2!1sro!2sro" data-lightbox="iframe">Wombat’s City Hostel London</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1475530865805!2d-0.07074592381776877!3d51.51050891047668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760335d00dd5b3%3A0x7ada14d7b8efd8ba!2sWombat&#39;s%20City%20Hostel%20London!5e0!3m2!1sro!2sro!4v1705846306346!5m2!1sro!2sro" data-lightbox="iframe">Wombat’s City Hostel London - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 14K</a></li>
 				</ul>
 			</div>
@@ -2153,11 +2274,18 @@
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
 
-
+	</div>
 
 
 		<!-- Recenzia -->
-<div class="col-lg col-md-8 mt-4 mt-lg-0">
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
+                      <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
 			<div class="oc-item">
@@ -2201,7 +2329,11 @@
 
 		</div>
 	</div>
-</div>
+                      </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	</div>
@@ -2231,7 +2363,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-fill color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6552473532106!2d-0.12748062381718248!3d51.519540609816914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b33e83a5425%3A0x5a07ace7b9e902ca!2sAstor%20Museum%20Hostel!5e0!3m2!1sro!2sro!4v1705846356366!5m2!1sro!2sro" data-lightbox="iframe">Astor Museum Hostel</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6552473532106!2d-0.12748062381718248!3d51.519540609816914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b33e83a5425%3A0x5a07ace7b9e902ca!2sAstor%20Museum%20Hostel!5e0!3m2!1sro!2sro!4v1705846356366!5m2!1sro!2sro" data-lightbox="iframe">Astor Museum Hostel - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 11K</a></li>
 				</ul>
 			</div>
@@ -2259,9 +2391,17 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
-
+	</div>
 
 		<!-- Recenzia -->
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
 <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
@@ -2308,8 +2448,13 @@
 		</div>
 	</div>
 </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</div>
+
+	
 	</div>
 </div>
 
@@ -2337,7 +2482,7 @@
 			<div class="entry-meta">
 				<ul>
 					<li><i class="bi-star-fill color"></i> <i class="bi-star-half color"></i></li>
-					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0495569112813!2d-0.18868642381764467!3d51.51230681034541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605550a1df4c5%3A0xb4ab403f287c8cb9!2sSmart%20Hyde%20Park%20Inn%20Hostel!5e0!3m2!1sro!2sro!4v1705846397752!5m2!1sro!2sro" data-lightbox="iframe">Smart Hyde Park Inn Hostel</a></li>
+					<li><i class="bi-geo-alt"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0495569112813!2d-0.18868642381764467!3d51.51230681034541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605550a1df4c5%3A0xb4ab403f287c8cb9!2sSmart%20Hyde%20Park%20Inn%20Hostel!5e0!3m2!1sro!2sro!4v1705846397752!5m2!1sro!2sro" data-lightbox="iframe">Smart Hyde Park Inn Hostel - harta</a></li>
 					<li><i class="like-icon">&#x1F60D;</i><a href="#"> 9K</a></li>
 				</ul>
 			</div>
@@ -2365,9 +2510,17 @@
 			
 			<a href="#booking-form" class="button button-rounded mt-4 mx-0">Rezerva Acum!</a>
 		</div>
-
+	</div>
 
 		<!-- Recenzia -->
+
+		<div class="content" style="padding-top: 2.5rem; max-width: none; margin-right: 0; padding-right: 0; width: 100%;">
+
+			<div class="content-wrap">
+		
+				<div class="container" style="max-width: none; width: 100%;">
+		
+					<div class="row justify-content-center">
 <div class="col-lg col-md-8 mt-4 mt-lg-0">
 	<div class="block-testimonials card py-4">
 		<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget" data-margin="0" data-items="1">
@@ -2413,8 +2566,13 @@
 		</div>
 	</div>
 </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</div>
+
+	
 
 	</div>
 </div>
@@ -2501,14 +2659,14 @@
 												<div class="list-group btn-group-vertical mb-3" role="group">
 
 													
-													<label for="booking-registration-room-standard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0" style="background-color: #993333; color: white;">
+													<label for="booking-registration-room-luxury" class="btn list-group-item d-flex justify-content-between align-items-center mb-0" style="background-color: #993333; color: white;">
 														<span class="d-block">
 															<h4 class="my-0">Categoria Luxury budget</h4>
 														</span>
 													</label>
 
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Standard" id="booking-registration-room-standard" checked value="Standard Room">
-													<label for="booking-registration-room-standard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Savoy" id="booking-registration-room-savoy" checked value="Standard Room">
+													<label for="booking-registration-room-savoy" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Savoy</h4>
 															
@@ -2516,8 +2674,8 @@
 														
 													</label>
 
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-deluxe" value="Deluxe Room">
-													<label for="booking-registration-room-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Montcalm" id="booking-registration-room-montcalm" value="Deluxe Room">
+													<label for="booking-registration-room-montcalm" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">The Montcalm Royal London House</h4>
 															
@@ -2525,24 +2683,24 @@
 														
 													</label>
 
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-lancaster" value="Super Deluxe Room">
+													<label for="booking-registration-room-lancaster" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Royal Lancaster London</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-standard" value="Sueluxe Room">
+													<label for="booking-registration-room-standard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">The Standard, London</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-shard" value="Super Deluxe Room">
+													<label for="booking-registration-room-shard" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Shangri-La The Shard, London</h4>
 															
@@ -2558,40 +2716,40 @@
 
 
 
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-premier" value="Super Deluxe Room">
+													<label for="booking-registration-room-premier" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Premier Inn London City </h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-holiday" value="Super Deluxe Room">
+													<label for="booking-registration-room-holiday" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Holiday Inn London</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-ibis" value="Super Deluxe Room">
+													<label for="booking-registration-room-ibis" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Ibis London Blackfriars</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-travel" value="Super Deluxe Room">
+													<label for="booking-registration-room-travel" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Travelodge London Central City Road</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-point" value="Super Deluxe Room">
+													<label for="booking-registration-room-point" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Point A Hotel London Shoreditch</h4>
 															
@@ -2606,40 +2764,40 @@
 														</span>
 													</label>
 
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-yha" value="Super Deluxe Room">
+													<label for="booking-registration-room-yha" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">YHA London St Pancras</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-safestay" value="Super Deluxe Room">
+													<label for="booking-registration-room-safestay" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Safestay London Elephant & Castle</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-wombat" value="Super Deluxe Room">
+													<label for="booking-registration-room-wombat" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Wombat’s City Hostel London</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-astor" value="Super Deluxe Room">
+													<label for="booking-registration-room-astor" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Astor Museum Hostel</h4>
 															
 														</span>
 														
 													</label>
-													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-													<label for="booking-registration-room-super-deluxe" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
+													<input class="btn-check" type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-smart" value="Super Deluxe Room">
+													<label for="booking-registration-room-smart" class="btn list-group-item d-flex justify-content-between align-items-center mb-0">
 														<span class="d-block">
 															<h4 class="my-0">Smart Hyde Park Inn Hostel</h4>
 															
@@ -2757,7 +2915,7 @@
 	<main class="content-wrap">
 		<div class="container">
 
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" style="padding-top: 2.5rem;" >
 				<div class="col-xl-6 col-lg-8 text-center mb-6">
 					<p class="mb-2 text-info text-uppercase ls-2 text-smaller">Cum putem sa te ajutam?</p>
 					<h3 class="h1 fw-bold mb-3">Intrebari Frecvente</h3>
@@ -2769,8 +2927,6 @@
 				============================================= -->
 				<div class="col-lg-9">
 
-
-					<div class="clear"></div>
 
 					<div id="faqs" class="faqs">
 
@@ -2954,7 +3110,7 @@
 
 											travel@london.com
 
-											<img src="demos/travel/images/divertisment/cutie.gif" >
+											
 
 
 
