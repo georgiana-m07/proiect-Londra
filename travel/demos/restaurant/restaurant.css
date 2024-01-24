@@ -40,6 +40,8 @@
 	display: block;
 	background-size: cover;
 	background-position: center center;
+    background-color: rgb(66, 6, 6);
+    
 	width: auto;
 	height: 100%;
 	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.05);
@@ -51,11 +53,11 @@
 }
 
 .item-thumb .owl-dot:hover span,
-.item-thumb .owl-dot.active span { opacity: .7; }
+.item-thumb .owl-dot.active span { opacity: .7;  }
 
 
-.food-menu .item-thumb .owl-dot:nth-of-type(1) span { background-image: url('E:\template londra\themeforest-pM5A56N9-canvas-the-multipurpose-html5-template\themeforest-pM5A56N9-canvas-the-multipurpose-html5-template\Package-HTML\Canvas 7 Files\images\blog\full\2'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(2) span { background-image: url('demos/travel/images/blog/Ken1.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(1) span { background-image: url('demos/travel/images/blog/Ken1'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(2) span { background-image: url('demos/travel/images/ALEXIA/nav.jpg'); }
 .food-menu .item-thumb .owl-dot:nth-of-type(3) span { background-image: url('demos/travel/images/blog/Ken1.jpg'); }
 .food-menu .item-thumb .owl-dot:nth-of-type(4) span { background-image: url('demos/travel/images/blog/Ken1.jpg'); }
 .food-menu .item-thumb .owl-dot:nth-of-type(5) span { background-image: url('demos/travel/images/blog/Ken1.jpg'); }
