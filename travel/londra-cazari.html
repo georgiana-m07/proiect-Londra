@@ -314,7 +314,7 @@
 
 
 		<section id="content">
-			<div class="content-wrap d-flex min-vh-50 align-items-center">
+			<div class="content-wrap d-flex min-vh-30 align-items-center">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-10">
@@ -379,22 +379,7 @@
 		<script src="js/plugins.min.js"></script>
 		<script src="js/functions.bundle.js"></script>
 	
-		<script>
-			var videoEl = document.querySelector('#slide-video'),
-				videoMute = document.querySelector('#video-slider-mute');
-	
-			videoMute.onclick = function(e) {
-				e.preventDefault();
-	
-				if( videoMute.classList.contains('video-muted') ) {
-					videoEl.muted = true;
-				} else {
-					videoEl.muted = false;
-				}
-	
-				videoMute.classList.toggle('video-muted');
-			};
-		</script>
+		
 	
 	</body>
 	</html>
@@ -421,9 +406,7 @@
 			font-weight: normal;
 			vertical-align: middle;
 		}
-		.checklist input[type="checkbox"] {
-			-webkit-appearance: none;
-		}
+	
 		.checklist i {
 			position: absolute;
 			display: inline-block;
