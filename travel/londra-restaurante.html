@@ -79,6 +79,183 @@
     max-width: 100%; /* Limitare la lățimea parintelui */
 }
 
+
+
+
+#wrapper::after {
+	content: "";
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	transition: opacity 0.3s, background-color 0.2s ease;
+}
+
+.floating-btn-open #wrapper::after {
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.floating-btn-wrap {
+	--cnvs-floating-btn-size: 4rem;
+	--cnvs-floating-btn-pos-right: var(--cnvs-floating-btn-size);
+	--cnvs-floating-btn-pos-bottom: var(--cnvs-floating-btn-size);
+	--cnvs-floating-btn-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	--cnvs-floating-btn-bg-color: var(--cnvs-themecolor);
+	--cnvs-floating-btn-icon-color: #FFF;
+	--cnvs-floating-btn-bg-active-color: var(--bs-dark);
+	--cnvs-floating-btn-box-width: 25rem;
+	--cnvs-floating-btn-box-padding: 2rem;
+	--cnvs-floating-btn-box-radius: .3rem;
+	--cnvs-floating-btn-box-bg: #FFF;
+	--cnvs-floating-btn-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.07);
+
+
+	position: fixed;
+	right: var(--cnvs-floating-btn-pos-right);
+	bottom: var(--cnvs-floating-btn-pos-bottom);
+	z-index: 199;
+}
+
+.floating-btn-wrap .floating-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: var(--cnvs-floating-btn-size);
+	height: var(--cnvs-floating-btn-size);
+	border-radius: var(--cnvs-floating-btn-size);
+	background-color: var(--cnvs-floating-btn-bg-color);
+	color: var(--cnvs-floating-btn-icon-color);
+	cursor: pointer;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	transition: transform .3s ease;
+}
+
+.floating-btn-wrap .floating-btn:hover,
+.floating-btn-open .floating-btn-wrap .floating-btn {
+	transform: translate(-50%, -50%) scale(1.1);
+	background-color: var(--cnvs-floating-btn-bg-active-color);
+}
+
+.floating-btn-wrap .floating-btn .floating-btn-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: calc(var(--cnvs-floating-btn-size) * .5);
+	-webkit-transition: var(--cnvs-floating-btn-transition);
+	transition: var(--cnvs-floating-btn-transition);
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, transform;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-backface-visibility: hidden;
+}
+
+.floating-btn-wrap .floating-btn .floating-btn-icon.btn-active,
+.floating-btn-open .floating-btn-wrap .floating-btn .floating-btn-icon {
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.floating-btn-open .floating-btn-wrap .floating-btn .floating-btn-icon.btn-active {
+	opacity: 1;
+	-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.floating-btn-wrap .floating-btn-box {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: var(--cnvs-floating-btn-box-width);
+	background-color: var(--cnvs-floating-btn-box-bg);
+	border-radius: var(--cnvs-floating-btn-box-radius);
+	z-index: 1;
+	padding: var(--cnvs-floating-btn-box-padding);
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+	box-shadow: var(--cnvs-floating-btn-box-shadow);
+	-webkit-transform: scale(.01);
+	transform: scale(.01);
+	-webkit-transition: all var(--cnvs-floating-btn-transition);
+	transition: all var(--cnvs-floating-btn-transition);
+	-webkit-backface-visibility: hidden;
+}
+
+.floating-btn-open .floating-btn-wrap .floating-btn-box {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.floating-btn-wrap + #gotoTop {
+	left: 40px;
+	right: auto;
+}
+
+
+
+/*==================hover========================*/
+.block-expand-categories h1,
+		.block-expand-categories h2,
+		.block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+
+		.block-expand-categories .expand-category {
+			--height: 50vh;
+			--responsive-height: 60px;
+			--hover-flex: 10;
+
+			position: relative;
+			background-position: center center;
+			background-size: cover;
+			border-radius: 20px;
+			margin: 10px 0;
+			min-height: var(--responsive-height);
+			cursor: pointer;
+		}
+
+		.block-expand-categories .expand-category h4 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: 0;
+			transform: translateY(-50%);
+		}
+
+		/* Larger Device */
+		@media (min-width: 992px) {
+			.block-expand-categories .expand-category {
+				height: var(--height);
+				flex: 1;
+				margin: 0 10px;
+				transition: flex 1s ease;
+				-webkit-backface-visibility: hidden;
+				transform: translate3d(0,0,0);
+			}
+
+			.block-expand-categories:not(.on-click) .expand-category:hover,
+			.block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
+
+			.block-expand-categories .expand-category h4 {
+				opacity: 1;
+				top: auto;
+				bottom: 10px;
+				transform: none;
+				transition: opacity .4s ease;
+			}
+
+			.block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
+			.block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
+		}
+
 </style>
 
 </head>
@@ -653,6 +830,28 @@
 </div>
 </div>
 </div>
+<h2 class="text-center"><br> <br>Barbounia at the gallery</h2>
+<h3 class="text-center" style="font-size: 16px;">Votat Restaurantul Lunii</h3>
+					<div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
+						<div class="expand-category bg-light" style="background-image: url('demos/travel/images/blog/Bar6.jpg');">
+							<h4><a href="#" class="text-light">Aperitiv</a></h4>
+						</div>
+
+						<div class="expand-category bg-light" style="background-image: url('demos/travel/images/blog/Bar4.jpg');">
+							<h4><a href="#" class="text-light">Intermediar</a></h4>
+						</div>
+
+						<div class="expand-category bg-light" style="background-image: url('demos/travel/images/blog/Bar3.jpg');">
+							<h4><a href="#" class="text-light">Fel principal</a></h4>
+						</div>
+
+						<div class="expand-category bg-light" style="background-image: url('demos/travel/images/blog/Bar8.jpg');">
+							<h4><a href="#" class="text-light">Desert</a></h4>
+						</div>
+</div>
+</div>
+</div>
+
 
 <!--====================================================================
 =======================================================================
@@ -661,12 +860,12 @@
 =======================================================================
 ========================================================================-->
 
-			<div class="section mb-0" style="background: #442b2b58 url('demos/restaurant/images/sections/5.jpg') no-repeat top left / cover; padding: 60px 0; border-top: 1px solid #EEE;">
+			<div class="section mb-0" style="background: #442b2b58 url('demos/restaurant/images/sections/5.jpg') no-repeat top left / cover; padding: 60px 0; border-top: 15px solid #EEE;border-bottom: 15px solid #EEE;">
 				<div class="container">
 					<div class="heading-block text-center mb-0 border-bottom-0">
 						<span class="font-primary" style="font-size: 24px; color: #888">Meniu</span>
 						<h3 class="text-transform-none font-secondary ls-0" style="font-size: 60px;">Restaurantul Lunii</h3>
-						<span class="font-primary" style="font-size: 14px; color: #888">cu cele mai bune recenzii</span>
+						
 					</div>
 				</div>
 			</div>
@@ -856,6 +1055,74 @@
 </div>
 </div>
 </div>
+
+<div class="section m-0">
+	<div class="container">
+
+		<div class="row col-mb-50">
+
+			<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+				
+				<i class="bi i-plain i-xlarge mx-auto bi-emoji-smile-fill"></i>
+				<div class="counter counter-lined"><span data-from="100" data-to="846" data-refresh-interval="50" data-speed="2000"></span>+</div>
+				<h5>Clienti fericiti</h5>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="floating-btn-wrap">
+				<div class="floating-btn shadow">
+					<i class="floating-btn-icon btn-unactive uil uil-plus"></i>
+					<i class="floating-btn-icon btn-active uil uil-plus"></i>
+				</div>
+		
+				<div class="floating-btn-box">
+					<h3 class="mb-3">Trimite-ne un mesaj!</h3>
+					<div class="form-widget">
+						<div class="form-result"></div>
+						<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+		
+							<div class="form-process">
+								<div class="css3-spinner">
+									<div class="css3-spinner-scaler"></div>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div class="col-12 form-group">
+									<label for="template-contactform-name">Nume <small>*</small></label>
+									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
+								</div>
+		
+								<div class="col-12 form-group">
+									<label for="template-contactform-email">Email <small>*</small></label>
+									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
+								</div>
+		
+								<div class="w-100"></div>
+		
+								<div class="col-12 form-group">
+									<label for="template-contactform-message">Mesaj <small>*</small></label>
+									<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="4" cols="30"></textarea>
+								</div>
+		
+								<div class="col-12 form-group d-none">
+									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
+								</div>
+		
+								<div class="col-12 form-group">
+									<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Trimite</button>
+								</div>
+							</div>
+		
+							<input type="hidden" name="prefix" value="template-contactform-">
+		
+						</form>
+		
+					</div>
+				</div>
+			</div>
+		
 </section>
 
 			
@@ -1240,14 +1507,6 @@
 			rtl: carouselRTL
 		});
 
-		jQuery('#dessert-menu-carousel').owlCarousel({
-			animateIn: 'fadeIn',
-			animateOut: 'fadeOut',
-			items: 1,
-			mouseDrag: false,
-			dotsContainer: '#item-thumb1',
-			rtl: carouselRTL
-		});
 	});
 
 
@@ -1263,6 +1522,29 @@
 
 		});
 
+		jQuery(document).ready( function(){
+			var elementParent = jQuery('body');
+			jQuery('.floating-btn').off( 'click' ).on( 'click', function() {
+				elementParent.toggleClass('floating-btn-open');
+			});
+		});
+
+		jQuery(document).on('click', function(event) {
+			if (!jQuery(event.target).closest('.floating-btn-wrap').length) {
+				jQuery('body').toggleClass('floating-btn-open', false );
+			}
+		});
+
+
+		/* gvushdgbvhsdhbgvjvdsv*/
+		jQuery(document).ready(function() {
+			jQuery('.block-expand-categories').find('.expand-category').on( 'click', function() {
+				let category = jQuery(this);
+
+				category.siblings().removeClass('active');
+				category.addClass('active');
+			});
+		});
 	</script>
 
 
