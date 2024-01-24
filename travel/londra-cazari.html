@@ -223,6 +223,17 @@
 			#video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
 	
 			#video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
+
+
+			#block-countdown-3 .countdown-section {
+			padding: 20px;
+			margin-left: 15px;
+			background-color: #F1F1F1;
+			border: 0;
+			border-radius: 4px;
+		}
+
+		#block-countdown-3 .countdown-section:first-child { margin-left: 0; }
 		</style>
 
 <script>
@@ -297,6 +308,71 @@
 	
 	
 		</div><!-- #wrapper end -->
+		
+	
+
+
+
+		<section id="content">
+			<div class="content-wrap d-flex min-vh-50 align-items-center">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-10">
+							<div class="row col-mb-30">
+								<div class="col-md-4">
+									<div class="feature-box fbox-small fbox-effect">
+										<div class="fbox-icon mb-4 mt-3">
+											<a href="#"><i class="bi-calendar"></i></a>
+										</div>
+										<div class="fbox-content">
+											<div class="counter"><span data-from="1" data-to="15" data-refresh-interval="10" data-speed="1600"></span>+</div>
+											<h3>Ani de Experienta.</h3>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="feature-box fbox-small fbox-effect">
+										<div class="fbox-icon mb-4 mt-3">
+											<a href="#"><i class="bi-file-earmark-richtext"></i></a>
+										</div>
+										<div class="fbox-content">
+											<div class="counter"><span data-from="4" data-to="83" data-refresh-interval="50" data-speed="1500"></span>%</div>
+											<h3>de Munca Completa</h3>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="feature-box fbox-small fbox-effect">
+										<div class="fbox-icon mb-4 mt-3">
+											<a href="#"><i class="bi-people"></i></a>
+										</div>
+										<div class="fbox-content">
+											<div class="counter"><span data-from="5" data-to="1000" data-refresh-interval="30" data-speed="1200"></span>%</div>
+											<h3>Clienti Satisfacuti</h3>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</section><!-- #content end -->
+
+
+
+
+
+
+
+
+
+
 	
 		<!-- JavaScripts
 		============================================= -->
@@ -402,10 +478,126 @@
 			--cnvs-checklist-active-color: rgba(255,255,255,0.4);
 		}
 
+
+
+		.si-sticky.si-sidebar {
+			--width: 240px;
+			--height: 54px;
+			--icon-size: var(--height); /* 54px */
+			--text-width: calc(var(--width) - var(--height)); /* 230px - 54px */
+			width: var(--icon-size);
+			height: auto;
+		}
+
+		.si-sticky.si-sidebar:not(.si-sticky-right) { left: 0; }
+
+		.si-sticky.si-sidebar .social-icon {
+			margin: 2px 0;
+			margin-left: calc(-1 * var(--text-width));
+			width: var(--width);
+			height: var(--height);
+			border: 0;
+			border-radius: 0 4px 4px 0;
+			display: inline-flex;
+			align-items: center;
+			transition: margin 0.2s ease-in-out;
+		}
+
+		.si-sticky.si-sidebar .social-icon i {
+			position: absolute;
+			left: auto;
+			right: 0;
+			width: var(--icon-size);
+			height: var(--icon-size);
+			line-height: var(--icon-size);
+			text-align: center;
+			transition: all 0.2s ease-in-out;
+		}
+
+		.si-sticky.si-sidebar .social-icon span {
+			color: #FFF;
+			font-size: 1rem;
+			width: var(--text-width);
+			text-align: center;
+		}
+
+
+		.si-sticky.si-sticky-right { right: 0; }
+
+		.si-sticky.si-sidebar.si-sticky-right .social-icon {
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+			margin-left: 0;
+			border-radius: 4px 0 0 4px;
+		}
+
+		.si-sticky.si-sidebar.si-sticky-right .social-icon i {
+			left: 0;
+			right: auto;
+		}
+
+		@media (min-width: 992px) {
+			.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover { margin-left: 0; }
+			.si-sticky.si-sidebar:not(.si-sticky-right) .social-icon:hover i { right: calc(-1 * var(--text-width)); }
+
+			.si-sticky.si-sidebar.si-sticky-right .social-icon:hover { margin-left: calc(-1 * var(--text-width)); }
+			.si-sticky.si-sidebar.si-sticky-right .social-icon:hover i { left: calc(-1 * var(--text-width)); }
+		}
+
+		.my-custom-div {
+        margin-left: 60px;  /* Spațiu liber în stânga */
+        margin-right: 40px; /* Spațiu liber în dreapta */
+    }
 		
 	</style>
  
 
+<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div class="si-sticky si-sidebar">
+						<a href="#" class="social-icon text-white bg-facebook">
+							<span>Share pe Facebook</span>
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="#" class="social-icon text-white bg-instagram">
+							<span>Follow pe Instagram</span>
+							<i class="bi-instagram"></i>
+						</a>
+						<a href="#" class="social-icon text-white bg-youtube">
+							<span>Subscribe pe Youtube</span>
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+					</div>
+
+					<div class="si-sticky si-sticky-right si-sidebar">
+						<a href="#" class="social-icon text-white bg-x-twitter">
+							<span>Follow pe Twitter</span>
+							<i class="fa-brands fa-x-twitter"></i>
+						</a>
+						<a href="#" class="social-icon text-white bg-pinterest">
+							<span>Follow pe Pinterest</span>
+							<i class="fa-brands fa-pinterest-p"></i>
+						</a>
+						<a href="#" class="social-icon text-white bg-email3">
+							<span>Trimite-ne Email</span>
+							<i class="fa-solid fa-envelope"></i>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
 
 
 
@@ -487,7 +679,8 @@
 
 
 
-<div class="entry col-12">
+<div class="entry col-12" style="padding: 5rem;">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -546,7 +739,7 @@
 
 <!-- Recenzia -->
 	
-<div class="content">
+<div class="content" style="padding-top: 2.5rem;">
 
 	<div class="content-wrap">
 
@@ -571,7 +764,7 @@
 									</div>
 								</div>
 							</div>
-			
+				
 							<div class="oc-item">
 								<div class="row g-0 align-items-center">
 									<div class="col-md-4 d-flex flex-column text-center align-items-center">
@@ -587,7 +780,7 @@
 									</div>
 								</div>
 							</div>
-			
+				
 							<div class="oc-item">
 								<div class="row g-0 align-items-center">
 									<div class="col-md-4 d-flex flex-column text-center align-items-center">
@@ -600,7 +793,7 @@
 									</div>
 								</div>
 							</div>
-			
+				
 						</div>
 					</div>
 				</div>
@@ -614,10 +807,13 @@
 </div>
 
 
+
+
 	
 
 
 
+</div>
 
 
 </div>
@@ -625,6 +821,7 @@
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -732,13 +929,14 @@
 
 
 
-
+	</div>
 	</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -842,13 +1040,14 @@
 
 
 
-
+	</div>
 	</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -950,7 +1149,7 @@
 </div>
 
 
-
+	</div>
 
 	</div>
 </div>
@@ -958,6 +1157,7 @@
    
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1055,7 +1255,7 @@
 	</div>
 </div>
 
-
+	</div>
 
 	</div>
 </div>
@@ -1104,6 +1304,7 @@
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 									<div class="grid-inner row">
 										<div class="col-lg-4">
 											<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1205,13 +1406,14 @@
 
 
 
-
+									</div>
 									</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1310,7 +1512,7 @@
 
 
 
-
+	</div>
 
 
 	</div>
@@ -1319,6 +1521,7 @@
 
 				
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1419,7 +1622,7 @@
 
 
 
-
+	</div>
 
 	</div>
 </div>
@@ -1427,6 +1630,7 @@
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1530,7 +1734,7 @@
 		</div>
 	</div>
 </div>
-
+	</div>
 
 	</div>
 </div>
@@ -1538,6 +1742,7 @@
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1640,7 +1845,7 @@
 	</div>
 </div>
 
-
+	</div>
 	</div>
 </div>
 			
@@ -1685,6 +1890,7 @@
 					
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 														<div class="grid-inner row">
 															<div class="col-lg-4">
 																<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1781,7 +1987,7 @@
 		</div>
 	</div>
 </div>
-
+														</div>
 
 														</div>
 </div>
@@ -1789,6 +1995,7 @@
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1889,13 +2096,14 @@
 	</div>
 </div>
 
-
+	</div>
 	</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -1995,13 +2203,14 @@
 	</div>
 </div>
 
-
+	</div>
 	</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -2100,13 +2309,14 @@
 	</div>
 </div>
 
-
+	</div>
 	</div>
 </div>
 
 
 
 <div class="entry col-12">
+	<div class="my-custom-div">
 	<div class="grid-inner row">
 		<div class="col-lg-4">
 			<div class="fslider" data-pagi="false" data-lightbox="gallery">
@@ -2204,6 +2414,7 @@
 	</div>
 </div>
 
+	</div>
 
 	</div>
 </div>
@@ -2536,6 +2747,135 @@
 	</div>
 
 </section>
+
+
+
+
+
+
+<section id="content">
+	<main class="content-wrap">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-xl-6 col-lg-8 text-center mb-6">
+					<p class="mb-2 text-info text-uppercase ls-2 text-smaller">Cum putem sa te ajutam?</p>
+					<h3 class="h1 fw-bold mb-3">Intrebari Frecvente</h3>
+				</div>
+
+				<div class="clear"></div>
+
+				<!-- Post Content
+				============================================= -->
+				<div class="col-lg-9">
+
+
+					<div class="clear"></div>
+
+					<div id="faqs" class="faqs">
+
+						<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors">
+							<div class="toggle-header">
+								<div class="toggle-icon">
+									<i class="toggle-closed bi-question-circle"></i>
+									<i class="toggle-open bi-question-circle"></i>
+								</div>
+								<div class="toggle-title ps-1">
+									Care este politica de anulare și de returnare a banilor?
+								</div>
+								<div class="toggle-icon">
+									<i class="toggle-closed fa-solid fa-chevron-down text-white-50"></i>
+									<i class="toggle-open fa-solid fa-chevron-up text-white-50"></i>
+								</div>
+							</div>
+							<div class="toggle-content text-black-50 ps-4">Este important să cunoaștem condițiile de anulare în cazul unor schimbări neprevăzute în planurile noastre și să știm dacă putem recupera sau nu costurile.</div>
+						</div>
+
+						<div class="toggle faq pb-3 mb-3 faq-authors faq-miscellaneous">
+							<div class="toggle-header">
+								<div class="toggle-icon">
+									<i class="toggle-closed uil uil-comments-alt"></i>
+									<i class="toggle-open uil uil-comments-alt"></i>
+								</div>
+								<div class="toggle-title ps-1">
+									Există opțiuni pentru transport local sau transferuri către/de la aeroport?
+								</div>
+								<div class="toggle-icon">
+									<i class="toggle-closed fa-solid fa-chevron-down text-white-50"></i>
+									<i class="toggle-open fa-solid fa-chevron-up text-white-50"></i>
+								</div>
+							</div>
+							<div class="toggle-content text-black-50 ps-4">Toate hotelurile au in apropiere transport local sau transferuri către/de la aeroport, ceea ce poate fi util pentru oaspeții care călătoresc.</div>
+						</div>
+
+						<div class="toggle faq pb-3 mb-3 faq-miscellaneous">
+							<div class="toggle-header">
+								<div class="toggle-icon">
+									<i class="toggle-closed bi-lock"></i>
+									<i class="toggle-open bi-lock"></i>
+								</div>
+								<div class="toggle-title ps-1">
+									Care este politica în ceea ce privește animalele de companie?
+								</div>
+								<div class="toggle-icon">
+									<i class="toggle-closed fa-solid fa-chevron-down text-white-50"></i>
+									<i class="toggle-open fa-solid fa-chevron-up text-white-50"></i>
+								</div>
+							</div>
+							<div class="toggle-content text-black-50 ps-4">Pentru cei care călătoresc cu animale de companie, este important să știe care sunt regulile primordiale asociate.</div>
+						</div>
+
+						<div class="toggle faq pb-3 mb-3 faq-authors faq-legal faq-itemdiscussion">
+							<div class="toggle-header">
+								<div class="toggle-icon">
+									<i class="toggle-closed bi-download"></i>
+									<i class="toggle-open bi-download"></i>
+								</div>
+								<div class="toggle-title ps-1">
+									Este disponibilă servirea mesei în cameră sau există opțiuni de luat masa în apropiere?
+								</div>
+								<div class="toggle-icon">
+									<i class="toggle-closed fa-solid fa-chevron-down text-white-50"></i>
+									<i class="toggle-open fa-solid fa-chevron-up text-white-50"></i>
+								</div>
+							</div>
+							<div class="toggle-content text-black-50 ps-4">Da, pentru cei care preferă să mănânce în intimitatea camerei in functie de posibilitatile ofrite de camera, iar pentru cei care doresc să cunoască opțiunile de luat masa în apropierea hotelului sunt afisatecpe site-ul fiecarui hotel.</div>
+						</div>
+
+						<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors">
+							<div class="toggle-header">
+								<div class="toggle-icon">
+									<i class="toggle-closed bi-check-lg"></i>
+									<i class="toggle-open bi-check-lg"></i>
+								</div>
+								<div class="toggle-title ps-1">
+									Cum pot rezerva și plăti pentru camera de hotel?
+								</div>
+								<div class="toggle-icon">
+									<i class="toggle-closed fa-solid fa-chevron-down text-white-50"></i>
+									<i class="toggle-open fa-solid fa-chevron-up text-white-50"></i>
+								</div>
+							</div>
+							<div class="toggle-content text-black-50 ps-4">Completezi formularul de mai sus care iti indica pasii concreti pentru a plati si a rezerva o camera la hotelul ales.</div>
+						</div>
+
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</main>
+</section><!-- #content end -->
+
+
+
+
+
+
+
 
 <title>Testimonial | Canvas</title>
 
